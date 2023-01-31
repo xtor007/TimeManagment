@@ -114,6 +114,7 @@
 			buildConfigurationList = FFE6A7992989989700DE5C91 /* Build configuration list for PBXNativeTarget "TimeManagment" */;
 			buildPhases = (
 				FFE6A7A929899C5C00DE5C91 /* [SwiftGen] Generate Sources */,
+				FFE6A7AE29899DC700DE5C91 /* [SwiftLint] Validate Sources */,
 				FFE6A7872989989200DE5C91 /* Sources */,
 				FFE6A7882989989200DE5C91 /* Frameworks */,
 				FFE6A7892989989200DE5C91 /* Resources */,
@@ -194,6 +195,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+		FFE6A7AE29899DC700DE5C91 /* [SwiftLint] Validate Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftLint] Validate Sources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
