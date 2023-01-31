@@ -14,6 +14,8 @@
 		FFE6A7A029899A5200DE5C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A79F29899A5200DE5C91 /* Images.xcassets */; };
 		FFE6A7A229899A5E00DE5C91 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7A129899A5E00DE5C91 /* Colors.xcassets */; };
 		FFE6A7A629899A8A00DE5C91 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7A829899A8A00DE5C91 /* Localizable.strings */; };
+		FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7AA29899D3000DE5C91 /* Assets.generated.swift */; };
+		FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7AB29899D3000DE5C91 /* Strings.generated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		FFE6A79F29899A5200DE5C91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FFE6A7A129899A5E00DE5C91 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FFE6A7A729899A8A00DE5C91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FFE6A7AA29899D3000DE5C91 /* Assets.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.generated.swift; sourceTree = "<group>"; };
+		FFE6A7AB29899D3000DE5C91 /* Strings.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.generated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 		FFE6A79D298999D600DE5C91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFE6A7AA29899D3000DE5C91 /* Assets.generated.swift */,
+				FFE6A7AB29899D3000DE5C91 /* Strings.generated.swift */,
 				FFE6A79F29899A5200DE5C91 /* Images.xcassets */,
 				FFE6A7A129899A5E00DE5C91 /* Colors.xcassets */,
 				FFE6A7A829899A8A00DE5C91 /* Localizable.strings */,
@@ -107,6 +113,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFE6A7992989989700DE5C91 /* Build configuration list for PBXNativeTarget "TimeManagment" */;
 			buildPhases = (
+				FFE6A7A929899C5C00DE5C91 /* [SwiftGen] Generate Sources */,
 				FFE6A7872989989200DE5C91 /* Sources */,
 				FFE6A7882989989200DE5C91 /* Frameworks */,
 				FFE6A7892989989200DE5C91 /* Resources */,
@@ -168,13 +175,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		FFE6A7A929899C5C00DE5C91 /* [SwiftGen] Generate Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[SwiftGen] Generate Sources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nexport PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftgen >/dev/null; then\n  swiftgen\nelse\n  echo \"warning: SwiftGen not installed, download it from https://github.com/SwiftGen/SwiftGen\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FFE6A7872989989200DE5C91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
+				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
+				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

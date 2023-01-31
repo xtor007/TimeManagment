@@ -1,0 +1,14 @@
+xcassets:
+  - inputs:
+    - TimeManagment/Resources
+    outputs:
+      - templateName: swift5
+        output: TimeManagment/Resources/Assets.generated.swift
+
+strings:
+  inputs: TimeManagment/Resources/en.lproj
+  outputs:
+    - templateName: structured-swift5
+      output: TimeManagment/Resources/Strings.generated.swift
+      params:
+        enumName: Strings
