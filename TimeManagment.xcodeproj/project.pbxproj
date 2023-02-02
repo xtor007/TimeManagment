@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
+		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
+		FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D35298C44FC008CED85 /* MainViewModel.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
@@ -23,6 +25,8 @@
 /* Begin PBXFileReference section */
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FFC28D35298C44FC008CED85 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 		FFC28D2A298C4052008CED85 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FFC28D31298C448C008CED85 /* CalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -68,6 +73,22 @@
 				FFC28D2F298C4318008CED85 /* Event.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC28D33298C4496008CED85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D34298C44EA008CED85 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFC28D34298C44EA008CED85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D35298C44FC008CED85 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		FFE6A7822989989200DE5C91 = {
@@ -130,6 +151,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FFC28D33298C4496008CED85 /* Main */,
 				FFC28D29298C3FE7008CED85 /* Calendar */,
 				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
@@ -253,11 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
+				FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */,
 				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
 				FFC28D30298C4318008CED85 /* Event.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
+				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
