@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
+		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +46,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFC28D29298C3FE7008CED85 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2A298C4052008CED85 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FFC28D2A298C4052008CED85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC28D2C298C42B4008CED85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2D298C42CA008CED85 /* EventType.swift */,
+				FFC28D2F298C4318008CED85 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFE6A7822989989200DE5C91 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +89,7 @@
 		FFE6A78D2989989200DE5C91 /* TimeManagment */ = {
 			isa = PBXGroup;
 			children = (
+				FFC28D2C298C42B4008CED85 /* Model */,
 				FFE6A79E298999F600DE5C91 /* Flow */,
 				FFE6A79D298999D600DE5C91 /* Resources */,
 				FFE6A79C298999C500DE5C91 /* App */,
@@ -101,6 +130,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FFC28D29298C3FE7008CED85 /* Calendar */,
 				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
 			path = Flow;
@@ -223,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
+				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
+				FFC28D30298C4318008CED85 /* Event.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
