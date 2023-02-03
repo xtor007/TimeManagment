@@ -15,7 +15,6 @@
 		C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E0298C9B5D00640E6B /* AuthView.swift */; };
 		C47086E4298C9B7E00640E6B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E3298C9B7E00640E6B /* String.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
-		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
 		FFE6A7962989989700DE5C91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7952989989700DE5C91 /* Preview Assets.xcassets */; };
 		FFE6A7A029899A5200DE5C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A79F29899A5200DE5C91 /* Images.xcassets */; };
@@ -33,7 +32,6 @@
 		C47086E3298C9B7E00640E6B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
-		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FFE6A7922989989700DE5C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFE6A7952989989700DE5C91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FFE6A79F29899A5200DE5C91 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -77,7 +75,6 @@
 		FFE6A7822989989200DE5C91 = {
 			isa = PBXGroup;
 			children = (
-				C47086D4298C927F00640E6B /* GoogleService-Info.plist */,
 				FFE6A78D2989989200DE5C91 /* TimeManagment */,
 				FFE6A78C2989989200DE5C91 /* Products */,
 			);
@@ -94,6 +91,7 @@
 		FFE6A78D2989989200DE5C91 /* TimeManagment */ = {
 			isa = PBXGroup;
 			children = (
+				C47086D4298C927F00640E6B /* GoogleService-Info.plist */,
 				C47086E2298C9B6900640E6B /* Extensions */,
 				FFE6A79E298999F600DE5C91 /* Flow */,
 				FFE6A79D298999D600DE5C91 /* Resources */,
@@ -136,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				C47086DB298C9B1500640E6B /* Auth */,
-				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -267,7 +264,6 @@
 			files = (
 				C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */,
 				C47086DF298C9B4D00640E6B /* LoginView.swift in Sources */,
-				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,

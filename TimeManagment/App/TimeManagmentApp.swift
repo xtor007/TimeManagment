@@ -7,15 +7,34 @@
 
 import SwiftUI
 import FirebaseCore
+import FirebaseAuth
 
 @main
 struct TimeManagmentApp: App {
-    init() {
-        FirebaseApp.configure()
-    }
+    @AppStorage(Strings.Db.uid) var userID: String = ""
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if userID == "" {
+                AuthView()
+            } else {
+                Text("\(Strings.Temp.loggedin) \(userID)")
+                Button(action: {
+                    let firebaseAuth = Auth.auth()
+                    do {
+                        try firebaseAuth.signOut()
+                        withAnimation {
+                            userID = ""
+                        }
+                    } catch let signOutError as NSError {
+                        print(Strings.Temp.errorAuth, signOutError)
+                    }
+                }) {
+                    Text(Strings.Signout.signout)
+                }
+            }
         }
+    }
+    init() {
+        FirebaseApp.configure()
     }
 }

@@ -7,3 +7,30 @@
 */
 
 "general.simpleLine" = "simle line";
+
+// Auth localizable strings
+"login.welcomeBack" = "Welcome Back!";
+"login.createAccount" = "Don't have an account?";
+"login.signin" = "Sign In";
+"signup.createAccount" = "Create an account!";
+"signup.alreadyHave" = "Already have an account?";
+"signup.createNew" = "Create new account";
+"signout.signout" = "Sign Out";
+
+// Placeholders
+"placeholder.email" = "Email";
+"placeholder.password" = "Password";
+
+// Icons
+"icon.email" = "email";
+"icon.lock" = "lock";
+"icon.checkmark" = "checkmark";
+"icon.xmark" = "xmark";
+
+// Firebase Rows
+"db.uid" = "uid";
+
+// Temp
+"temp.loggedin" = "Logged In! \nYour user id is";
+"temp.errorAuth" = "Error signing out: ";
+

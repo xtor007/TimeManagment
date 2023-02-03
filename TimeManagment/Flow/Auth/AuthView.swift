@@ -7,10 +7,15 @@
 
 import SwiftUI
 
+enum AuthViewShowing {
+case login
+case signup
+}
+
 struct AuthView: View {
-    @State private var currentViewShowing: String = "login" // login or signup
+    @State private var currentViewShowing: AuthViewShowing = .login // login or signup
     var body: some View {
-        if currentViewShowing == "login" {
+        if currentViewShowing == .login {
             LoginView(currentShowingView: $currentViewShowing)
                 .preferredColorScheme(.light)
         } else {

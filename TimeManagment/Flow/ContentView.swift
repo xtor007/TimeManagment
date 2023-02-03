@@ -9,12 +9,12 @@ import SwiftUI
 import FirebaseAuth
 
 struct ContentView: View {
-    @AppStorage("uid") var userID: String = ""
+    @AppStorage(Strings.Db.uid) var userID: String = ""
     var body: some View {
         if userID == "" {
             AuthView()
         } else {
-            Text("Logged In! \nYour user id is \(userID)")
+            Text("\(Strings.Temp.loggedin) \(userID)")
             Button(action: {
                 let firebaseAuth = Auth.auth()
                 do {
@@ -23,10 +23,10 @@ struct ContentView: View {
                         userID = ""
                     }
                 } catch let signOutError as NSError {
-                    print("Error signing out: %@", signOutError)
+                    print(Strings.Temp.errorAuth, signOutError)
                 }
             }) {
-                Text("Sign Out")
+                Text(Strings.Signout.signout)
             }
         }
     }

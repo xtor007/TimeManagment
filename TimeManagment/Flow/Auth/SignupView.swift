@@ -11,21 +11,14 @@ import FirebaseAuth
 struct SignupView: View {
     @State private var email: String = ""
     @State private var password: String = ""
-    @AppStorage("uid") var userID: String = ""
-    @Binding var currentShowingView: String
-    private func isValidPassword(_ password: String) -> Bool {
-        // minimum 6 characters long
-        // 1 uppercase character
-        // 1 special char
-        let passwordRegex = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])(?=.*[A-Z]).{6,}$")
-        return passwordRegex.evaluate(with: password)
-    }
+    @AppStorage(Strings.Db.uid) var userID: String = ""
+    @Binding var currentShowingView: AuthViewShowing
     var body: some View {
         ZStack {
             Color.black.edgesIgnoringSafeArea(.all)
             VStack {
                 HStack {
-                    Text("Create an Account!")
+                    Text(Strings.Signup.createAccount)
                         .foregroundColor(.white)
                         .font(.largeTitle)
                         .bold()
@@ -35,11 +28,11 @@ struct SignupView: View {
                 .padding(.top)
                 Spacer()
                 HStack {
-                    Image(systemName: "mail")
-                    TextField("Email", text: $email)
+                    Image(systemName: Strings.Icon.email)
+                    TextField(Strings.Placeholder.email, text: $email)
                     Spacer()
                     if email.count != 0 {
-                        Image(systemName: email.isValidEmail() ? "checkmark" : "xmark")
+                        Image(systemName: email.isValidEmail() ? Strings.Icon.checkmark : Strings.Icon.xmark)
                             .fontWeight(.bold)
                             .foregroundColor(email.isValidEmail() ? .green : .red)
                     }
@@ -53,13 +46,13 @@ struct SignupView: View {
                 )
                 .padding()
                 HStack {
-                    Image(systemName: "lock")
-                    SecureField("Password", text: $password)
+                    Image(systemName: Strings.Icon.lock)
+                    SecureField(Strings.Placeholder.password, text: $password)
                     Spacer()
                     if password.count != 0 {
-                        Image(systemName: isValidPassword(password) ? "checkmark" : "xmark")
+                        Image(systemName: password.isValidPassword() ? Strings.Icon.checkmark : Strings.Icon.xmark)
                             .fontWeight(.bold)
-                            .foregroundColor(isValidPassword(password) ? .green : .red)
+                            .foregroundColor(password.isValidPassword() ? .green : .red)
                     }
                 }
                 .foregroundColor(.white)
@@ -72,10 +65,10 @@ struct SignupView: View {
                 .padding()
                 Button(action: {
                     withAnimation {
-                        self.currentShowingView = "login"
+                        self.currentShowingView = .login
                     }
                 }) {
-                    Text("Already have an account?")
+                    Text(Strings.Signup.alreadyHave)
                         .foregroundColor(.gray)
                 }
                 Spacer()
@@ -92,7 +85,7 @@ struct SignupView: View {
                         }
                     }
                 } label: {
-                    Text("Create New Account")
+                    Text(Strings.Signup.createNew)
                         .foregroundColor(.black)
                         .font(.title3)
                         .bold()
