@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C47086D5298C927F00640E6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C47086D4298C927F00640E6B /* GoogleService-Info.plist */; };
+		C47086D8298C948E00640E6B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C47086D7298C948E00640E6B /* FirebaseAuth */; };
+		C47086DA298C948E00640E6B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C47086D9298C948E00640E6B /* FirebaseFirestore */; };
+		C47086DD298C9B3600640E6B /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086DC298C9B3600640E6B /* SignupView.swift */; };
+		C47086DF298C9B4D00640E6B /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086DE298C9B4D00640E6B /* LoginView.swift */; };
+		C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E0298C9B5D00640E6B /* AuthView.swift */; };
+		C47086E4298C9B7E00640E6B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E3298C9B7E00640E6B /* String.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
@@ -19,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C47086D4298C927F00640E6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C47086DC298C9B3600640E6B /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		C47086DE298C9B4D00640E6B /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C47086E0298C9B5D00640E6B /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		C47086E3298C9B7E00640E6B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,15 +48,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47086D8298C948E00640E6B /* FirebaseAuth in Frameworks */,
+				C47086DA298C948E00640E6B /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C47086DB298C9B1500640E6B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C47086DC298C9B3600640E6B /* SignupView.swift */,
+				C47086DE298C9B4D00640E6B /* LoginView.swift */,
+				C47086E0298C9B5D00640E6B /* AuthView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		C47086E2298C9B6900640E6B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C47086E3298C9B7E00640E6B /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		FFE6A7822989989200DE5C91 = {
 			isa = PBXGroup;
 			children = (
+				C47086D4298C927F00640E6B /* GoogleService-Info.plist */,
 				FFE6A78D2989989200DE5C91 /* TimeManagment */,
 				FFE6A78C2989989200DE5C91 /* Products */,
 			);
@@ -61,6 +94,7 @@
 		FFE6A78D2989989200DE5C91 /* TimeManagment */ = {
 			isa = PBXGroup;
 			children = (
+				C47086E2298C9B6900640E6B /* Extensions */,
 				FFE6A79E298999F600DE5C91 /* Flow */,
 				FFE6A79D298999D600DE5C91 /* Resources */,
 				FFE6A79C298999C500DE5C91 /* App */,
@@ -101,6 +135,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				C47086DB298C9B1500640E6B /* Auth */,
 				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
 			path = Flow;
@@ -124,6 +159,10 @@
 			dependencies = (
 			);
 			name = TimeManagment;
+			packageProductDependencies = (
+				C47086D7298C948E00640E6B /* FirebaseAuth */,
+				C47086D9298C948E00640E6B /* FirebaseFirestore */,
+			);
 			productName = TimeManagment;
 			productReference = FFE6A78B2989989200DE5C91 /* TimeManagment.app */;
 			productType = "com.apple.product-type.application";
@@ -152,6 +191,9 @@
 				Base,
 			);
 			mainGroup = FFE6A7822989989200DE5C91;
+			packageReferences = (
+				C47086D6298C948E00640E6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = FFE6A78C2989989200DE5C91 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,6 +210,7 @@
 			files = (
 				FFE6A7A629899A8A00DE5C91 /* Localizable.strings in Resources */,
 				FFE6A7A029899A5200DE5C91 /* Images.xcassets in Resources */,
+				C47086D5298C927F00640E6B /* GoogleService-Info.plist in Resources */,
 				FFE6A7A229899A5E00DE5C91 /* Colors.xcassets in Resources */,
 				FFE6A7962989989700DE5C91 /* Preview Assets.xcassets in Resources */,
 				FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */,
@@ -222,10 +265,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */,
+				C47086DF298C9B4D00640E6B /* LoginView.swift in Sources */,
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
+				C47086E4298C9B7E00640E6B /* String.swift in Sources */,
+				C47086DD298C9B3600640E6B /* SignupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -347,7 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -437,6 +484,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C47086D6298C948E00640E6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C47086D7298C948E00640E6B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C47086D6298C948E00640E6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C47086D9298C948E00640E6B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C47086D6298C948E00640E6B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FFE6A7832989989200DE5C91 /* Project object */;
 }
