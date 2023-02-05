@@ -16,10 +16,10 @@ struct AuthView: View {
     @State private var currentViewShowing: AuthViewShowing = .login // login or signup
     var body: some View {
         if currentViewShowing == .login {
-            LoginView(currentShowingView: $currentViewShowing)
+            SignupView(currentViewShowing: $currentViewShowing)
                 .preferredColorScheme(.light)
         } else {
-            SignupView(currentShowingView: $currentViewShowing)
+            SignupView(currentViewShowing: $currentViewShowing)
                 .preferredColorScheme(.dark)
                 .transition(.move(edge: .bottom))
         }

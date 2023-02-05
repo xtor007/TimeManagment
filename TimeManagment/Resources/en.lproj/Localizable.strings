@@ -22,7 +22,7 @@
 "placeholder.password" = "Password";
 
 // Icons
-"icon.email" = "email";
+"icon.email" = "mail";
 "icon.lock" = "lock";
 "icon.checkmark" = "checkmark";
 "icon.xmark" = "xmark";

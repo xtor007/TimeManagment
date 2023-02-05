@@ -24,8 +24,8 @@ internal enum Strings {
   internal enum Icon {
     /// checkmark
     internal static let checkmark = Strings.tr("Localizable", "icon.checkmark", fallback: "checkmark")
-    /// email
-    internal static let email = Strings.tr("Localizable", "icon.email", fallback: "email")
+    /// mail
+    internal static let email = Strings.tr("Localizable", "icon.email", fallback: "mail")
     /// lock
     internal static let lock = Strings.tr("Localizable", "icon.lock", fallback: "lock")
     /// xmark
