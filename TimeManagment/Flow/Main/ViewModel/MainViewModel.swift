@@ -9,6 +9,7 @@ import Foundation
 
 class MainViewModel: ObservableObject {
 
-    let events = Event.preview
+    @Published var events = Event.preview
+    @Published var date = Date.now
 
 }
