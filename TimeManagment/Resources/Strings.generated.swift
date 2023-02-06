@@ -10,6 +10,22 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum EventType {
+    /// Funning
+    internal static let funning = Strings.tr("Localizable", "eventType.funning", fallback: "Funning")
+    /// Learning
+    internal static let learning = Strings.tr("Localizable", "eventType.learning", fallback: "Learning")
+    /// Meeting
+    internal static let meeting = Strings.tr("Localizable", "eventType.meeting", fallback: "Meeting")
+    /// Partey
+    internal static let partey = Strings.tr("Localizable", "eventType.partey", fallback: "Partey")
+    /// Shoping
+    internal static let shoping = Strings.tr("Localizable", "eventType.shoping", fallback: "Shoping")
+    /// Sport
+    internal static let sport = Strings.tr("Localizable", "eventType.sport", fallback: "Sport")
+    /// Walking
+    internal static let walking = Strings.tr("Localizable", "eventType.walking", fallback: "Walking")
+  }
   internal enum General {
     /// Localizable.strings
     ///   TimeManagment

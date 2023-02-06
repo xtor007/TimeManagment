@@ -7,3 +7,11 @@
 */
 
 "general.simpleLine" = "simle line";
+
+"eventType.meeting" = "Meeting";
+"eventType.partey" = "Partey";
+"eventType.learning" = "Learning";
+"eventType.shoping" = "Shoping";
+"eventType.walking" = "Walking";
+"eventType.funning" = "Funning";
+"eventType.sport" = "Sport";
