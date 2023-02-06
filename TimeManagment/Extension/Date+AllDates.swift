@@ -1,8 +1,8 @@
 //
 //  Date+GetAllDates.swift
-//  VOCollege
+//  TimeManagment
 //
-//  Created by Anatoliy Khramchenko on 24.11.2022.
+//  Created by Anatoliy Khramchenko on 02.02.2023.
 //
 
 import Foundation

@@ -1,8 +1,8 @@
 //
 //  Date+IsSameDay.swift
-//  VOCollege
+//  TimeManagment
 //
-//  Created by Anatoliy Khramchenko on 25.11.2022.
+//  Created by Anatoliy Khramchenko on 02.02.2023.
 //
 
 import Foundation

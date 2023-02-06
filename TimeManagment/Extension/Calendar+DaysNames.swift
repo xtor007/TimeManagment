@@ -1,8 +1,8 @@
 //
 //  Calendar+DaysNames.swift
-//  VOCollege
+//  TimeManagment
 //
-//  Created by Anatoliy Khramchenko on 02.12.2022.
+//  Created by Anatoliy Khramchenko on 02.02.2022.
 //
 
 import Foundation
