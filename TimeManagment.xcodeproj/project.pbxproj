@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
+		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
+		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
+		FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D35298C44FC008CED85 /* MainViewModel.swift */; };
+		FFC856B02991541200E304C2 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */; };
+		FFC856B12991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B2299154F400E304C2 /* Fonts.generated.swift */; };
+		FFC856B9299155E300E304C2 /* Date+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B5299155E300E304C2 /* Date+Description.swift */; };
+		FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B6299155E300E304C2 /* Date+AllDates.swift */; };
+		FFC856BB299155E300E304C2 /* Calendar+DaysNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */; };
+		FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
@@ -19,6 +30,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FFC28D35298C44FC008CED85 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FFC856B2299154F400E304C2 /* Fonts.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
+		FFC856B5299155E300E304C2 /* Date+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Description.swift"; sourceTree = "<group>"; };
+		FFC856B6299155E300E304C2 /* Date+AllDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+AllDates.swift"; sourceTree = "<group>"; };
+		FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+DaysNames.swift"; sourceTree = "<group>"; };
+		FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+IsSameDay.swift"; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +64,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFC28D29298C3FE7008CED85 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2A298C4052008CED85 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FFC28D2A298C4052008CED85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D31298C448C008CED85 /* CalendarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC28D2C298C42B4008CED85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2D298C42CA008CED85 /* EventType.swift */,
+				FFC28D2F298C4318008CED85 /* Event.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC28D33298C4496008CED85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D34298C44EA008CED85 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFC28D34298C44EA008CED85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D35298C44FC008CED85 /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFC856AD299153F100E304C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */,
+				FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FFC856B4299155BA00E304C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */,
+				FFC856B6299155E300E304C2 /* Date+AllDates.swift */,
+				FFC856B5299155E300E304C2 /* Date+Description.swift */,
+				FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		FFE6A7822989989200DE5C91 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +144,8 @@
 		FFE6A78D2989989200DE5C91 /* TimeManagment */ = {
 			isa = PBXGroup;
 			children = (
+				FFC856B4299155BA00E304C2 /* Extension */,
+				FFC28D2C298C42B4008CED85 /* Model */,
 				FFE6A79E298999F600DE5C91 /* Flow */,
 				FFE6A79D298999D600DE5C91 /* Resources */,
 				FFE6A79C298999C500DE5C91 /* App */,
@@ -89,6 +174,8 @@
 		FFE6A79D298999D600DE5C91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFC856B2299154F400E304C2 /* Fonts.generated.swift */,
+				FFC856AD299153F100E304C2 /* Fonts */,
 				FFE6A7AA29899D3000DE5C91 /* Assets.generated.swift */,
 				FFE6A7AB29899D3000DE5C91 /* Strings.generated.swift */,
 				FFE6A79F29899A5200DE5C91 /* Images.xcassets */,
@@ -101,6 +188,8 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FFC28D33298C4496008CED85 /* Main */,
+				FFC28D29298C3FE7008CED85 /* Calendar */,
 				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
 			path = Flow;
@@ -169,7 +258,9 @@
 				FFE6A7A629899A8A00DE5C91 /* Localizable.strings in Resources */,
 				FFE6A7A029899A5200DE5C91 /* Images.xcassets in Resources */,
 				FFE6A7A229899A5E00DE5C91 /* Colors.xcassets in Resources */,
+				FFC856B12991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				FFE6A7962989989700DE5C91 /* Preview Assets.xcassets in Resources */,
+				FFC856B02991541200E304C2 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,9 +314,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
+				FFC856BB299155E300E304C2 /* Calendar+DaysNames.swift in Sources */,
+				FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */,
+				FFC856B9299155E300E304C2 /* Date+Description.swift in Sources */,
+				FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */,
+				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
+				FFC28D30298C4318008CED85 /* Event.swift in Sources */,
+				FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
+				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,
+				FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
