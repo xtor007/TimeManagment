@@ -18,27 +18,27 @@ extension Event {
         Event(
             title: "Meet my boyfriend",
             date: .now,
-            type: EventType(typeName: "Meeting", color: Asset.Colors.foregroundColor)
+            type: EventTypeData.meeting.data
         ),
         Event(
             title: "Mike's birthday",
             date: Date(timeInterval: 3600 * 24, since: .now),
-            type: EventType(typeName: "Partey", color: Asset.Colors.foregroundColor)
+            type: EventTypeData.partey.data
         ),
         Event(
             title: "JS Lesson",
             date: Date(timeInterval: 3600 * 24 * 4, since: .now),
-            type: EventType(typeName: "Learning", color: Asset.Colors.foregroundColor)
+            type: EventTypeData.learning.data
         ),
         Event(
             title: "Meeting with my mom",
             date: Date(timeInterval: 3600 * 24 * 5, since: .now),
-            type: EventType(typeName: "Meeting", color: Asset.Colors.foregroundColor)
+            type: EventTypeData.meeting.data
         ),
         Event(
             title: "JS Lesson",
             date: Date(timeInterval: 3600 * 24 * 7, since: .now),
-            type: EventType(typeName: "Learning", color: Asset.Colors.foregroundColor)
+            type: EventTypeData.learning.data
         )
     ]
 }
