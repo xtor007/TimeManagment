@@ -34,9 +34,11 @@ internal enum Asset {
     internal static let walkingColor = ColorAsset(name: "walkingColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
     internal static let pickColor = ColorAsset(name: "pickColor")
+    internal static let secondaryForegroundColor = ColorAsset(name: "secondaryForegroundColor")
     internal static let simpleColor = ColorAsset(name: "simpleColor")
   }
   internal enum Images {
+    internal static let editButtonIcon = ImageAsset(name: "editButtonIcon")
     internal static let simpleImage = ImageAsset(name: "simpleImage")
   }
 }
