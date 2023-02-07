@@ -17,6 +17,9 @@
 "eventType.funning" = "Funning";
 "eventType.sport" = "Sport";
 
+
+"scanner.title" = "Scan barcode here";
+
 "main.calendar" = "Personal calendar";
 "main.events" = "Events";
 
