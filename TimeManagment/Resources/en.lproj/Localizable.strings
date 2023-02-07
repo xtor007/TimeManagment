@@ -23,3 +23,4 @@
 "changeEvent.add" = "Create Event";
 "changeEvent.edit" = "Edit Event";
 "changeEvent.enterTitle" = "Enter event title";
+"changeEvent.chooseCategories" = "Choose categories";

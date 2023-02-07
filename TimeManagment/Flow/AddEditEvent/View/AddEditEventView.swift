@@ -14,9 +14,11 @@ struct AddEditEventView: View {
     @StateObject var viewModel: AddEditEventViewModel
 
     @State var eventTitle = ""
+    @State var eventType = EventTypeData.meeting
+    @State var date = Date.now
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             HStack {
                 Text(viewModel.title)
                     .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
@@ -30,10 +32,29 @@ struct AddEditEventView: View {
                         .scaledToFit()
                         .frame(width: 20)
                 }
-
             }
             TextField(Strings.ChangeEvent.enterTitle, text: $eventTitle)
+                .font(.custom(FontFamily.Montserrat.regular, size: 16))
+                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
             Divider()
+                .padding(.bottom, 24)
+            Text(Strings.ChangeEvent.chooseCategories)
+                .font(.custom(FontFamily.Montserrat.medium, size: 14))
+                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+            EventTypeList(selectedType: $eventType)
+                .padding(.bottom, 24)
+            HStack {
+                Asset.Images.chooseDateIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 19)
+                DatePicker(
+                    "",
+                    selection: $date,
+                    in: Date.now...Date(timeIntervalSinceNow: 3600 * 24 * 365),
+                    displayedComponents: [.date]
+                )
+            }
         }
         .padding(.horizontal, 16)
         .onTapGesture {
