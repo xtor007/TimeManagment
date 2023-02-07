@@ -24,6 +24,7 @@
 		FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856C72992343300E304C2 /* TimePeriod.swift */; };
 		FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856CA29923ABB00E304C2 /* EventList.swift */; };
 		FFC856CD29923B2500E304C2 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856CC29923B2500E304C2 /* EventView.swift */; };
+		FFCC389529925ED200735D3D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC389429925ED200735D3D /* MainView.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A7902989989200DE5C91 /* ContentView.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
@@ -53,6 +54,7 @@
 		FFC856C72992343300E304C2 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
 		FFC856CA29923ABB00E304C2 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		FFC856CC29923B2500E304C2 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		FFCC389429925ED200735D3D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7902989989200DE5C91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 		FFC28D33298C4496008CED85 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FFCC389329925EC200735D3D /* View */,
 				FFC28D34298C44EA008CED85 /* ViewModel */,
 			);
 			path = Main;
@@ -177,6 +180,14 @@
 			children = (
 				FFC856CA29923ABB00E304C2 /* EventList.swift */,
 				FFC856CC29923B2500E304C2 /* EventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFCC389329925EC200735D3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC389429925ED200735D3D /* MainView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -384,6 +395,7 @@
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
 				FFC28D30298C4318008CED85 /* Event.swift in Sources */,
+				FFCC389529925ED200735D3D /* MainView.swift in Sources */,
 				FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
 				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,

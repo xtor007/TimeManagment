@@ -70,6 +70,7 @@ struct CalendarView: View {
         .onChange(of: currentMonth) { _ in
             viewModel.date = Date.getCurrentMonth(monthDifference: currentMonth)
         }
+        .padding(32)
     }
 
     @ViewBuilder

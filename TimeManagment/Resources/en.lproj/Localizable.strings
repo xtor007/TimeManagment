@@ -15,3 +15,6 @@
 "eventType.walking" = "Walking";
 "eventType.funning" = "Funning";
 "eventType.sport" = "Sport";
+
+"main.calendar" = "Personal calendar";
+"main.events" = "Events";
