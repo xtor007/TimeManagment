@@ -16,9 +16,14 @@ struct AddEditEventView: View {
     @State var eventTitle = ""
     @State var eventType = EventTypeData.meeting
     @State var date = Date.now
+    @State var time = TimePeriod(
+        start: Time(hours: 7, minutes: 0),
+        finish: Time(hours: 8, minutes: 0)
+    )
 
     var body: some View {
         VStack(alignment: .leading) {
+
             HStack {
                 Text(viewModel.title)
                     .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
@@ -38,11 +43,13 @@ struct AddEditEventView: View {
                 .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
             Divider()
                 .padding(.bottom, 24)
+
             Text(Strings.ChangeEvent.chooseCategories)
                 .font(.custom(FontFamily.Montserrat.medium, size: 14))
                 .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
             EventTypeList(selectedType: $eventType)
                 .padding(.bottom, 24)
+
             HStack {
                 Asset.Images.chooseDateIcon.swiftUIImage
                     .resizable()
@@ -54,7 +61,23 @@ struct AddEditEventView: View {
                     in: Date.now...Date(timeIntervalSinceNow: 3600 * 24 * 365),
                     displayedComponents: [.date]
                 )
+                .preferredColorScheme(.light)
             }
+            HStack {
+                Asset.Images.chooseTimeIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 20)
+                Spacer()
+                Text(time.description)
+                    .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+            }
+            .padding(.bottom, 24)
+
+            Text(Strings.ChangeEvent.description)
+                .font(.custom(FontFamily.Montserrat.medium, size: 14))
+                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+
         }
         .padding(.horizontal, 16)
         .onTapGesture {

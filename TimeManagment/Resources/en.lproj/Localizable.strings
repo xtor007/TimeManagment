@@ -24,3 +24,4 @@
 "changeEvent.edit" = "Edit Event";
 "changeEvent.enterTitle" = "Enter event title";
 "changeEvent.chooseCategories" = "Choose categories";
+"changeEvent.description" = "Description";
