@@ -27,3 +27,4 @@
 "changeEvent.description" = "Description";
 "changeEvent.continue" = "Continue";
 "changeEvent.updateTask" = "Update Task";
+"changeEvent.delete" = "Delete task";

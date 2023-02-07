@@ -79,19 +79,36 @@ struct AddEditEventView: View {
             Text(Strings.ChangeEvent.description)
                 .font(.custom(FontFamily.Montserrat.medium, size: 14))
                 .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-            TextView(text: $description, textStyle: .callout)
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(
-                                    Asset.Colors.borderColor.swiftUIColor,
-                                    lineWidth: 1
-                                )
-                        }
-                )
+//            TextView(text: $description, textStyle: .callout)
+//                .background(
+//                    RoundedRectangle(cornerRadius: 20)
+//                        .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
+//                        .overlay {
+//                            RoundedRectangle(cornerRadius: 20)
+//                                .stroke(
+//                                    Asset.Colors.borderColor.swiftUIColor,
+//                                    lineWidth: 1
+//                                )
+//                        }
+//                )
+//                .padding(.bottom, 24)
+
+            if viewModel.changeType == .edit {
+                HStack(spacing: 16) {
+                    Asset.Images.deleteEventIcon.swiftUIImage
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 18)
+                    Text(Strings.ChangeEvent.delete)
+                        .foregroundColor(Asset.Colors.deleteColor.swiftUIColor)
+                        .font(.custom(FontFamily.Montserrat.regular, size: 14))
+                }
+                .onTapGesture {
+                    mainViewModel.events.remove(at: mainViewModel.editingEventIndex)
+                    presentationMode.wrappedValue.dismiss()
+                }
                 .padding(.bottom, 24)
+            }
 
             BottomButton(title: viewModel.buttonTitle) {
                 guard !eventTitle.isEmpty else {
