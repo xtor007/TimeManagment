@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TimeManagmentApp: App {
+
+    @StateObject private var permissionManager = PermissonManager()
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ScannerView(code: .constant(""))
+                .environmentObject(permissionManager)
         }
     }
 }
