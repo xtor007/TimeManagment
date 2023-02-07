@@ -13,38 +13,48 @@ struct MainView: View {
 
     var body: some View {
         VStack {
-            HStack {
-                Text(Strings.Main.calendar)
-                    .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-                    .font(.custom(FontFamily.Montserrat.medium, size: 20))
-                Spacer()
+            VStack {
+                HStack {
+                    Text(Strings.Main.calendar)
+                        .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                        .font(.custom(FontFamily.Montserrat.medium, size: 20))
+                    Spacer()
+                }
+                CalendarView()
+                    .background(
+                        RoundedRectangle(cornerRadius: 20)
+                            .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 20)
+                                    .stroke(
+                                        Asset.Colors.borderColor.swiftUIColor,
+                                        lineWidth: 1
+                                    )
+                            }
+                    )
+                HStack {
+                    Text(Strings.Main.events)
+                        .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                        .font(.custom(FontFamily.Montserrat.medium, size: 20))
+                    Spacer()
+                }
+                EventTypeList(selectedType: $viewModel.type)
+                EventList()
             }
-            CalendarView()
-                .background(
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(
-                                    Asset.Colors.borderColor.swiftUIColor,
-                                    lineWidth: 1
-                                )
-                        }
-                )
-            HStack {
-                Text(Strings.Main.events)
-                    .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-                    .font(.custom(FontFamily.Montserrat.medium, size: 20))
-                Spacer()
+            .padding(.horizontal, 12)
+            .padding(.top, 32)
+            TabBarView {
+                print("code")
+            } connectByQRAction: {
+                print("qr")
+            } addEvent: {
+                print("add")
             }
-            EventTypeList(selectedType: $viewModel.type)
-            EventList()
         }
-        .padding(.horizontal, 12)
-        .padding(.top, 32)
         .background(
             Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
         )
+        .ignoresSafeArea(edges: .bottom)
     }
 
 }
