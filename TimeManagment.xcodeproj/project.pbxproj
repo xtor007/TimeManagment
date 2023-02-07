@@ -11,10 +11,10 @@
 		C47086DD298C9B3600640E6B /* SignupLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086DC298C9B3600640E6B /* SignupLoginViewModel.swift */; };
 		C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E0298C9B5D00640E6B /* AuthView.swift */; };
 		C47086E4298C9B7E00640E6B /* String+EmailPassValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47086E3298C9B7E00640E6B /* String+EmailPassValidation.swift */; };
+		C4C52E8A2992390900766113 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C4C52E892992390900766113 /* GoogleSignIn */; };
+		C4C52E8C2992390900766113 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4C52E8B2992390900766113 /* GoogleSignInSwift */; };
 		C4F0D428298F49190008D983 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C4F0D427298F49190008D983 /* FirebaseAuth */; };
 		C4F0D42A298F49190008D983 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C4F0D429298F49190008D983 /* FirebaseFirestore */; };
-		C4F0D42D298F4FD00008D983 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C4F0D42C298F4FD00008D983 /* GoogleSignIn */; };
-		C4F0D42F298F4FD00008D983 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C4F0D42E298F4FD00008D983 /* GoogleSignInSwift */; };
 		C4F5422A29911CCB004C9C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5422929911CCB004C9C3C /* AppDelegate.swift */; };
 		C4F5422C2991497B004C9C3C /* GoogleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5422B2991497B004C9C3C /* GoogleBtn.swift */; };
 		C4F5422F2991A6BB004C9C3C /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5422E2991A6BA004C9C3C /* GetViewController.swift */; };
@@ -57,8 +57,8 @@
 			files = (
 				C4F0D428298F49190008D983 /* FirebaseAuth in Frameworks */,
 				C4F0D42A298F49190008D983 /* FirebaseFirestore in Frameworks */,
-				C4F0D42D298F4FD00008D983 /* GoogleSignIn in Frameworks */,
-				C4F0D42F298F4FD00008D983 /* GoogleSignInSwift in Frameworks */,
+				C4C52E8A2992390900766113 /* GoogleSignIn in Frameworks */,
+				C4C52E8C2992390900766113 /* GoogleSignInSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,8 +198,8 @@
 			packageProductDependencies = (
 				C4F0D427298F49190008D983 /* FirebaseAuth */,
 				C4F0D429298F49190008D983 /* FirebaseFirestore */,
-				C4F0D42C298F4FD00008D983 /* GoogleSignIn */,
-				C4F0D42E298F4FD00008D983 /* GoogleSignInSwift */,
+				C4C52E892992390900766113 /* GoogleSignIn */,
+				C4C52E8B2992390900766113 /* GoogleSignInSwift */,
 			);
 			productName = TimeManagment;
 			productReference = FFE6A78B2989989200DE5C91 /* TimeManagment.app */;
@@ -231,7 +231,7 @@
 			mainGroup = FFE6A7822989989200DE5C91;
 			packageReferences = (
 				C4F0D426298F49190008D983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				C4F0D42B298F4FD00008D983 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				C4C52E882992390900766113 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			productRefGroup = FFE6A78C2989989200DE5C91 /* Products */;
 			projectDirPath = "";
@@ -529,6 +529,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		C4C52E882992390900766113 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		C4F0D426298F49190008D983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -537,17 +545,19 @@
 				kind = branch;
 			};
 		};
-		C4F0D42B298F4FD00008D983 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		C4C52E892992390900766113 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4C52E882992390900766113 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C4C52E8B2992390900766113 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C4C52E882992390900766113 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
 		C4F0D427298F49190008D983 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C4F0D426298F49190008D983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -557,16 +567,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C4F0D426298F49190008D983 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
-		};
-		C4F0D42C298F4FD00008D983 /* GoogleSignIn */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4F0D42B298F4FD00008D983 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignIn;
-		};
-		C4F0D42E298F4FD00008D983 /* GoogleSignInSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C4F0D42B298F4FD00008D983 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
-			productName = GoogleSignInSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

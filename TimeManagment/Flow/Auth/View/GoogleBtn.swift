@@ -10,10 +10,9 @@ import SwiftUI
 struct GoogleSiginBtn: View {
     var action: () -> Void
     var body: some View {
-        Button(
-            action: {
-            })
-        {
+        Button {
+            action()
+        } label: {
             HStack {
                 Spacer()
                 Image("google")
