@@ -11,6 +11,8 @@ struct EventList: View {
 
     @EnvironmentObject var viewModel: MainViewModel
 
+    let editEvent: (Int) -> Void
+
     var body: some View {
         ZStack {
             Text(Strings.General.empty)
@@ -21,7 +23,9 @@ struct EventList: View {
                     ForEach(0..<viewModel.events.count, id: \.self) { eventIndex in
                         let event = viewModel.events[eventIndex]
                         if event.date.isSameDay(date: viewModel.date) && event.type == viewModel.type.data {
-                            EventView(event: event)
+                            EventView(event: event) {
+                                editEvent(eventIndex)
+                            }
                             Divider()
                         }
                     }
@@ -38,7 +42,9 @@ struct EventList: View {
 
 struct EventList_Previews: PreviewProvider {
     static var previews: some View {
-        EventList()
+        EventList { _ in
+            return
+        }
             .environmentObject(MainViewModel())
     }
 }

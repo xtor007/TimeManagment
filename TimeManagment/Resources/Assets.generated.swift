@@ -34,6 +34,7 @@ internal enum Asset {
     internal static let walkingColor = ColorAsset(name: "walkingColor")
     internal static let backgroundColor = ColorAsset(name: "backgroundColor")
     internal static let borderColor = ColorAsset(name: "borderColor")
+    internal static let deleteColor = ColorAsset(name: "deleteColor")
     internal static let elementBackgroundColor = ColorAsset(name: "elementBackgroundColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
     internal static let pickColor = ColorAsset(name: "pickColor")
@@ -41,9 +42,13 @@ internal enum Asset {
     internal static let simpleColor = ColorAsset(name: "simpleColor")
   }
   internal enum Images {
+    internal static let chooseDateIcon = ImageAsset(name: "chooseDateIcon")
+    internal static let chooseTimeIcon = ImageAsset(name: "chooseTimeIcon")
+    internal static let deleteEventIcon = ImageAsset(name: "deleteEventIcon")
     internal static let addEventButtonIcon = ImageAsset(name: "addEventButtonIcon")
     internal static let connectByCodeButtonIcon = ImageAsset(name: "connectByCodeButtonIcon")
     internal static let qrButtonIcon = ImageAsset(name: "qrButtonIcon")
+    internal static let closeButtonIcon = ImageAsset(name: "closeButtonIcon")
     internal static let editButtonIcon = ImageAsset(name: "editButtonIcon")
     internal static let simpleImage = ImageAsset(name: "simpleImage")
   }

@@ -10,6 +10,26 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum ChangeEvent {
+    /// Create Event
+    internal static let add = Strings.tr("Localizable", "changeEvent.add", fallback: "Create Event")
+    /// Choose categories
+    internal static let chooseCategories = Strings.tr("Localizable", "changeEvent.chooseCategories", fallback: "Choose categories")
+    /// Continue
+    internal static let `continue` = Strings.tr("Localizable", "changeEvent.continue", fallback: "Continue")
+    /// Delete task
+    internal static let delete = Strings.tr("Localizable", "changeEvent.delete", fallback: "Delete task")
+    /// Description
+    internal static let description = Strings.tr("Localizable", "changeEvent.description", fallback: "Description")
+    /// Add notes, meeting links or phone numbers...
+    internal static let descriptionPlaceholder = Strings.tr("Localizable", "changeEvent.descriptionPlaceholder", fallback: "Add notes, meeting links or phone numbers...")
+    /// Edit Event
+    internal static let edit = Strings.tr("Localizable", "changeEvent.edit", fallback: "Edit Event")
+    /// Enter event title
+    internal static let enterTitle = Strings.tr("Localizable", "changeEvent.enterTitle", fallback: "Enter event title")
+    /// Update Task
+    internal static let updateTask = Strings.tr("Localizable", "changeEvent.updateTask", fallback: "Update Task")
+  }
   internal enum EventType {
     /// Funning
     internal static let funning = Strings.tr("Localizable", "eventType.funning", fallback: "Funning")
@@ -40,6 +60,12 @@ internal enum Strings {
     internal static let calendar = Strings.tr("Localizable", "main.calendar", fallback: "Personal calendar")
     /// Events
     internal static let events = Strings.tr("Localizable", "main.events", fallback: "Events")
+  }
+  internal enum SelectTimePeriod {
+    /// Finish
+    internal static let finish = Strings.tr("Localizable", "selectTimePeriod.finish", fallback: "Finish")
+    /// Start
+    internal static let start = Strings.tr("Localizable", "selectTimePeriod.start", fallback: "Start")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

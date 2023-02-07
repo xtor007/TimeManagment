@@ -11,6 +11,7 @@ struct EventView: View {
 
     @EnvironmentObject var viewModel: MainViewModel
     let event: Event
+    let editAction: () -> Void
 
     var body: some View {
         HStack {
@@ -35,7 +36,7 @@ struct EventView: View {
                 Spacer()
                 if event.authorId == viewModel.userId {
                     Button {
-                        print("Edit")
+                        editAction()
                     } label: {
                         Asset.Images.editButtonIcon.swiftUIImage
                             .resizable()
@@ -53,7 +54,9 @@ struct EventView: View {
 
 struct EventView_Previews: PreviewProvider {
     static var previews: some View {
-        EventView(event: Event.preview[0])
+        EventView(event: Event.preview[0]) {
+            return
+        }
             .environmentObject(MainViewModel())
     }
 }

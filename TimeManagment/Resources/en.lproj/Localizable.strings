@@ -23,3 +23,15 @@
 "main.calendar" = "Personal calendar";
 "main.events" = "Events";
 
+"changeEvent.add" = "Create Event";
+"changeEvent.edit" = "Edit Event";
+"changeEvent.enterTitle" = "Enter event title";
+"changeEvent.chooseCategories" = "Choose categories";
+"changeEvent.description" = "Description";
+"changeEvent.continue" = "Continue";
+"changeEvent.updateTask" = "Update Task";
+"changeEvent.delete" = "Delete task";
+"changeEvent.descriptionPlaceholder" = "Add notes, meeting links or phone numbers...";
+
+"selectTimePeriod.start" = "Start";
+"selectTimePeriod.finish" = "Finish";

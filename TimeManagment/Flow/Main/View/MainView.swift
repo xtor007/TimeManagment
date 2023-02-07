@@ -11,6 +11,9 @@ struct MainView: View {
 
     @EnvironmentObject var viewModel: MainViewModel
 
+    @State var willAddEvent = false
+    @State var willEditEvent = false
+
     var body: some View {
         VStack(spacing: 0) {
             ScrollView(showsIndicators: false) {
@@ -44,10 +47,12 @@ struct MainView: View {
                         Spacer()
                     }
                     .padding(.horizontal, 12)
-
-                    EventTypeList(contentInset: 12, selectedType: $viewModel.type)
-
-                    EventList()
+                    EventTypeList(selectedType: $viewModel.type)
+                    EventList { editingEventIndex in
+                        viewModel.editingEventIndex = editingEventIndex
+                        willEditEvent = true
+                    }
+                        .frame(height: UIScreen.main.bounds.height * 0.4)
                         .padding(.horizontal, 12)
                 }
             }
@@ -58,12 +63,19 @@ struct MainView: View {
             } connectByQRAction: {
                 print("qr")
             } addEvent: {
-                print("add")
+                willAddEvent = true
             }
         }
         .background(
             Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
         )
+        .ignoresSafeArea(edges: .bottom)
+        .fullScreenCover(isPresented: $willAddEvent, content: {
+            AddEditEventView(viewModel: AddEditEventViewModel(changeType: .add))
+        })
+        .fullScreenCover(isPresented: $willEditEvent, content: {
+            AddEditEventView(viewModel: AddEditEventViewModel(changeType: .edit))
+        })
         .ignoresSafeArea(edges: .top)
     }
 
