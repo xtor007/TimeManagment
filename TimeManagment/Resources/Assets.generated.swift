@@ -44,6 +44,7 @@ internal enum Asset {
     internal static let addEventButtonIcon = ImageAsset(name: "addEventButtonIcon")
     internal static let connectByCodeButtonIcon = ImageAsset(name: "connectByCodeButtonIcon")
     internal static let qrButtonIcon = ImageAsset(name: "qrButtonIcon")
+    internal static let closeButtonIcon = ImageAsset(name: "closeButtonIcon")
     internal static let editButtonIcon = ImageAsset(name: "editButtonIcon")
     internal static let simpleImage = ImageAsset(name: "simpleImage")
   }

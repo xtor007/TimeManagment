@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FFC280BC2992B465005280BB /* AddEditEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280BB2992B465005280BB /* AddEditEventView.swift */; };
+		FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */; };
+		FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C12992B5A9005280BB /* ChangeEventType.swift */; };
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FFC280BB2992B465005280BB /* AddEditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventView.swift; sourceTree = "<group>"; };
+		FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventViewModel.swift; sourceTree = "<group>"; };
+		FFC280C12992B5A9005280BB /* ChangeEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEventType.swift; sourceTree = "<group>"; };
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -80,6 +86,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FFC280B92992B41B005280BB /* AddEditEvent */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C02992B58D005280BB /* Model */,
+				FFC280BD2992B46B005280BB /* ViewModel */,
+				FFC280BA2992B451005280BB /* View */,
+			);
+			path = AddEditEvent;
+			sourceTree = "<group>";
+		};
+		FFC280BA2992B451005280BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280BB2992B465005280BB /* AddEditEventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC280BD2992B46B005280BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFC280C02992B58D005280BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C12992B5A9005280BB /* ChangeEventType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FFC28D29298C3FE7008CED85 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +298,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FFC280B92992B41B005280BB /* AddEditEvent */,
 				FFC856C629922F6100E304C2 /* EventList */,
 				FFC856BD29919D6E00E304C2 /* EventTypeList */,
 				FFC28D33298C4496008CED85 /* Main */,
@@ -390,6 +431,7 @@
 				FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */,
 				FFC856B9299155E300E304C2 /* Date+Description.swift in Sources */,
 				FFC856CD29923B2500E304C2 /* EventView.swift in Sources */,
+				FFC280BC2992B465005280BB /* AddEditEventView.swift in Sources */,
 				FFC856C029919D9D00E304C2 /* EventTypeData.swift in Sources */,
 				FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */,
 				FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */,
@@ -402,9 +444,11 @@
 				FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */,
 				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
 				FFCC3897299267E900735D3D /* TabBarView.swift in Sources */,
+				FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */,
 				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,
 				FFC856C52991AA2400E304C2 /* EventTypeList.swift in Sources */,
 				FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */,
+				FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */,
 				FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

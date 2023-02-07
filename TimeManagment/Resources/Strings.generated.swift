@@ -10,6 +10,12 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
+  internal enum ChangeEvent {
+    /// Create Event
+    internal static let add = Strings.tr("Localizable", "changeEvent.add", fallback: "Create Event")
+    /// Edit Event
+    internal static let edit = Strings.tr("Localizable", "changeEvent.edit", fallback: "Edit Event")
+  }
   internal enum EventType {
     /// Funning
     internal static let funning = Strings.tr("Localizable", "eventType.funning", fallback: "Funning")
