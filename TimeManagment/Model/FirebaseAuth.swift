@@ -11,6 +11,7 @@ import SwiftUI
 
 struct FirebaseAuth {
     static let share = FirebaseAuth()
+    static var userID: String = ""
     private init() {}
     func signinWithGoogle(presenting: any View,
                           completion: @escaping (Error?) -> Void) -> String {
@@ -33,6 +34,7 @@ struct FirebaseAuth {
                     return
                 }
                 authResult = (result?.user.uid)!
+                UserDefaults.standard.set(true, forKey: "signIn")
             }
         }
         return authResult

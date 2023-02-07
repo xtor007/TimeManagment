@@ -40,8 +40,8 @@ internal enum Strings {
     internal static let createAccount = Strings.tr("Localizable", "login.createAccount", fallback: "Don't have an account?")
     /// Sign In
     internal static let signin = Strings.tr("Localizable", "login.signin", fallback: "Sign In")
-    /// Welcome Back!
-    internal static let welcomeBack = Strings.tr("Localizable", "login.welcomeBack", fallback: "Welcome Back!")
+    /// Welcome to Task Manager! 
+    internal static let welcomeBack = Strings.tr("Localizable", "login.welcomeBack", fallback: "Welcome to Task Manager! ")
   }
   internal enum Placeholder {
     /// Email

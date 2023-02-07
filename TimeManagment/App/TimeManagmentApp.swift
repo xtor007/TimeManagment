@@ -11,25 +11,23 @@ import FirebaseAuth
 
 @main
 struct TimeManagmentApp: App {
-    @AppStorage(Strings.Db.uid) var userID: String = ""
+    @AppStorage("signIn") var isSignIn = false
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
         WindowGroup {
-            if userID == "" {
+            if !isSignIn {
                 AuthView()
             } else {
-                Text("\(Strings.Temp.loggedin) \(userID)")
+                Text("\(Strings.Temp.loggedin)")
                 Button(action: {
                     let firebaseAuth = Auth.auth()
-                    do {
-                        try firebaseAuth.signOut()
-                        withAnimation {
-                            userID = ""
-                        }
-                    } catch let signOutError as NSError {
-                        print(Strings.Temp.errorAuth, signOutError)
-                    }
+                   do {
+                     try firebaseAuth.signOut()
+                   } catch let signOutError as NSError {
+                     print("Error signing out: %@", signOutError)
+                   }
+                    UserDefaults.standard.set(false, forKey: "signIn")
                 }) {
                     Text(Strings.Signout.signout)
                 }

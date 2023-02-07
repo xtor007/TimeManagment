@@ -9,7 +9,7 @@
 "general.simpleLine" = "simle line";
 
 // Auth localizable strings
-"login.welcomeBack" = "Welcome Back!";
+"login.welcomeBack" = "Welcome to Task Manager! ";
 "login.createAccount" = "Don't have an account?";
 "login.signin" = "Sign In";
 "signup.createAccount" = "Create an account!";
