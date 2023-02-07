@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		97BC1F9529925C7700CC17F1 /* BarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */; };
+		97BC1F9729925D3A00CC17F1 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */; };
+		97BC1F9E2992631800CC17F1 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9D2992631800CC17F1 /* ScannerView.swift */; };
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanner.swift; sourceTree = "<group>"; };
+		97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		97BC1F9D2992631800CC17F1 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -76,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		97BC1F9329925C5B00CC17F1 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */,
+				97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */,
+				97BC1F9D2992631800CC17F1 /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
 		FFC28D29298C3FE7008CED85 /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -244,6 +260,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				97BC1F9329925C5B00CC17F1 /* Scanner */,
 				FFC856C629922F6100E304C2 /* EventList */,
 				FFC856BD29919D6E00E304C2 /* EventTypeList */,
 				FFC28D33298C4496008CED85 /* Main */,
@@ -379,7 +396,10 @@
 				FFC856C029919D9D00E304C2 /* EventTypeData.swift in Sources */,
 				FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */,
 				FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */,
+				97BC1F9729925D3A00CC17F1 /* PermissionsManager.swift in Sources */,
+				97BC1F9E2992631800CC17F1 /* ScannerView.swift in Sources */,
 				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
+				97BC1F9529925C7700CC17F1 /* BarcodeScanner.swift in Sources */,
 				FFC856C32991A5E900E304C2 /* EventTypeElement.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
@@ -457,7 +477,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -511,7 +531,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -529,9 +549,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagment/Preview Content\"";
-				DEVELOPMENT_TEAM = 3MZDX9DG27;
+				DEVELOPMENT_TEAM = H3SHR752RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -542,7 +563,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.TimeManagment";
+				PRODUCT_BUNDLE_IDENTIFIER = sssasdads.sadasd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -558,9 +579,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagment/Preview Content\"";
-				DEVELOPMENT_TEAM = 3MZDX9DG27;
+				DEVELOPMENT_TEAM = H3SHR752RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -571,7 +593,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.TimeManagment";
+				PRODUCT_BUNDLE_IDENTIFIER = sssasdads.sadasd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
