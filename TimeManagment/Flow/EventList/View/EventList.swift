@@ -18,10 +18,15 @@ struct EventList: View {
                     let event = viewModel.events[eventIndex]
                     if event.date.isSameDay(date: viewModel.date) && event.type == viewModel.type.data {
                         EventView(event: event)
+                        Divider()
                     }
                 }
             }
         }
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(viewModel.type.data.color.swiftUIColor)
+        )
     }
 
 }
