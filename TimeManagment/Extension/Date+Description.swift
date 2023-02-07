@@ -17,7 +17,7 @@ extension Date {
 
     var dayDescription: String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMMM"
+        formatter.dateFormat = "d MMMM yyyy"
         return formatter.string(from: self)
     }
 

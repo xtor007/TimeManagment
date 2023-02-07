@@ -7,7 +7,13 @@
 
 import Foundation
 
-struct EventType {
+struct EventType: Equatable {
+
     let typeName: String
     let color: ColorAsset
+
+    static func == (lhs: EventType, rhs: EventType) -> Bool {
+        return lhs.typeName == rhs.typeName
+    }
+
 }

@@ -8,14 +8,32 @@
 import Foundation
 
 struct TimePeriod {
+
     let start: Time
     let finish: Time
+
+    var description: String {
+        return "\(start.description)-\(finish.description)"
+    }
+
 }
 
 struct Time {
 
     let hours: Int
     let minutes: Int
+
+    var description: String {
+        var hoursLine = "\(hours)"
+        if hoursLine.count < 2 {
+            hoursLine = "0\(hoursLine)"
+        }
+        var minutesLine = "\(minutes)"
+        if minutesLine.count < 2 {
+            minutesLine = "0\(minutesLine)"
+        }
+        return "\(hoursLine):\(minutesLine)"
+    }
 
     init(hours: Int, minutes: Int) {
         self.hours = 0...23 ~= hours ? hours : 0
