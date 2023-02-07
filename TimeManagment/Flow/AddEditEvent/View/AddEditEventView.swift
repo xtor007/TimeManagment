@@ -40,10 +40,7 @@ struct AddEditEventView: View {
                         .frame(width: 20)
                 }
             }
-            TextField(Strings.ChangeEvent.enterTitle, text: $eventTitle)
-                .font(.custom(FontFamily.Montserrat.regular, size: 16))
-                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-            Divider()
+            TitleTextField(eventTitle: $eventTitle)
                 .padding(.bottom, 24)
 
             Text(Strings.ChangeEvent.chooseCategories)
@@ -76,22 +73,8 @@ struct AddEditEventView: View {
             }
             .padding(.bottom, 24)
 
-            Text(Strings.ChangeEvent.description)
-                .font(.custom(FontFamily.Montserrat.medium, size: 14))
-                .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-//            TextView(text: $description, textStyle: .callout)
-//                .background(
-//                    RoundedRectangle(cornerRadius: 20)
-//                        .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
-//                        .overlay {
-//                            RoundedRectangle(cornerRadius: 20)
-//                                .stroke(
-//                                    Asset.Colors.borderColor.swiftUIColor,
-//                                    lineWidth: 1
-//                                )
-//                        }
-//                )
-//                .padding(.bottom, 24)
+            DescriptionTextField(description: $description)
+                .padding(.bottom, 24)
 
             if viewModel.changeType == .edit {
                 HStack(spacing: 16) {
@@ -107,8 +90,9 @@ struct AddEditEventView: View {
                     mainViewModel.events.remove(at: mainViewModel.editingEventIndex)
                     presentationMode.wrappedValue.dismiss()
                 }
-                .padding(.bottom, 24)
             }
+
+            Spacer()
 
             BottomButton(title: viewModel.buttonTitle) {
                 guard !eventTitle.isEmpty else {

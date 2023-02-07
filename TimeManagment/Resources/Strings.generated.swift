@@ -21,6 +21,8 @@ internal enum Strings {
     internal static let delete = Strings.tr("Localizable", "changeEvent.delete", fallback: "Delete task")
     /// Description
     internal static let description = Strings.tr("Localizable", "changeEvent.description", fallback: "Description")
+    /// Add notes, meeting links or phone numbers...
+    internal static let descriptionPlaceholder = Strings.tr("Localizable", "changeEvent.descriptionPlaceholder", fallback: "Add notes, meeting links or phone numbers...")
     /// Edit Event
     internal static let edit = Strings.tr("Localizable", "changeEvent.edit", fallback: "Edit Event")
     /// Enter event title

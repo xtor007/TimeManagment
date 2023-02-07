@@ -28,3 +28,4 @@
 "changeEvent.continue" = "Continue";
 "changeEvent.updateTask" = "Update Task";
 "changeEvent.delete" = "Delete task";
+"changeEvent.descriptionPlaceholder" = "Add notes, meeting links or phone numbers...";

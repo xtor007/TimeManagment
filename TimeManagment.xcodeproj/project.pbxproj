@@ -12,6 +12,8 @@
 		FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C12992B5A9005280BB /* ChangeEventType.swift */; };
 		FFC280C42992D137005280BB /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C32992D136005280BB /* TextView.swift */; };
 		FFC280C72992D428005280BB /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C62992D428005280BB /* BottomButton.swift */; };
+		FFC280C92992E7A1005280BB /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C82992E7A1005280BB /* TitleTextField.swift */; };
+		FFC280CB2992E847005280BB /* DescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280CA2992E847005280BB /* DescriptionTextField.swift */; };
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
@@ -48,6 +50,8 @@
 		FFC280C12992B5A9005280BB /* ChangeEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEventType.swift; sourceTree = "<group>"; };
 		FFC280C32992D136005280BB /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
 		FFC280C62992D428005280BB /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		FFC280C82992E7A1005280BB /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
+		FFC280CA2992E847005280BB /* DescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextField.swift; sourceTree = "<group>"; };
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 			children = (
 				FFC280BB2992B465005280BB /* AddEditEventView.swift */,
 				FFC280C32992D136005280BB /* TextView.swift */,
+				FFC280C82992E7A1005280BB /* TitleTextField.swift */,
+				FFC280CA2992E847005280BB /* DescriptionTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFC280C92992E7A1005280BB /* TitleTextField.swift in Sources */,
 				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
 				FFC856BB299155E300E304C2 /* Calendar+DaysNames.swift in Sources */,
 				FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */,
@@ -449,6 +456,7 @@
 				FFC856C029919D9D00E304C2 /* EventTypeData.swift in Sources */,
 				FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */,
 				FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */,
+				FFC280CB2992E847005280BB /* DescriptionTextField.swift in Sources */,
 				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
 				FFC856C32991A5E900E304C2 /* EventTypeElement.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
