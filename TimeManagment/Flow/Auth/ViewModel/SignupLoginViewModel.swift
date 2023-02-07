@@ -7,8 +7,9 @@
 
 import SwiftUI
 import FirebaseAuth
+import Firebase
 
-struct SignupView: View {
+struct SignUpLogin: View {
     @Binding var currentViewShowing: AuthViewShowing
     @AppStorage(Strings.Db.uid) var userID: String = ""
     @State private var email: String = ""
@@ -98,7 +99,11 @@ struct SignupView: View {
                             .foregroundColor(.black.opacity(0.7))
                     }
                 }
-                Spacer()
+                GoogleSiginBtn {
+                    userID = FirebaseAuth.share.signinWithGoogle(presenting: self)
+                    { error in }
+                    print("UserID: \(userID)")
+                }
                 Spacer()
                 Button {
                     switch currentViewShowing {
@@ -144,4 +149,3 @@ struct SignupView: View {
         }
     }
 }
-

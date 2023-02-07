@@ -12,6 +12,8 @@ import FirebaseAuth
 @main
 struct TimeManagmentApp: App {
     @AppStorage(Strings.Db.uid) var userID: String = ""
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             if userID == "" {
@@ -34,7 +36,5 @@ struct TimeManagmentApp: App {
             }
         }
     }
-    init() {
-        FirebaseApp.configure()
-    }
+
 }

@@ -16,6 +16,7 @@
 "signup.alreadyHave" = "Already have an account?";
 "signup.createNew" = "Create new account";
 "signout.signout" = "Sign Out";
+"authcheck.signIn" = "signIn";
 
 // Placeholders
 "placeholder.email" = "Email";
