@@ -12,7 +12,7 @@ extension Calendar {
     static var isAdditionalMoveNeeded = false
 
     var daysNames: [Substring] {
-        var days = self.shortStandaloneWeekdaySymbols
+        let days = self.shortStandaloneWeekdaySymbols
         return days.compactMap { day in
             return day.prefix(3)
         }
