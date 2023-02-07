@@ -9,11 +9,14 @@ import SwiftUI
 import FirebaseAuth
 import Firebase
 
-struct SignUpLogin: View {
-    static var userID: String = ""
+struct SignupView: View {
+
+    let viewModel: SignupViewModel
+
     var body: some View {
         ZStack {
             Color.white.edgesIgnoringSafeArea(.all)
+
             VStack {
                 HStack {
                     Text(Strings.Login.welcomeBack)
@@ -23,13 +26,22 @@ struct SignUpLogin: View {
                 }
                 .padding()
                 .padding(.top)
+
                 Image("authImage")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+
                 Spacer()
+
                 GoogleSiginBtn {
-                    FirebaseAuth.share.signinWithGoogle(presenting: self)
-                    { error in }
+                    viewModel.signinWithGoogle(presenting: self) { result in
+                        switch result {
+                        case .success(let success):
+                            print(success?.user.uid)
+                        case .failure(let failure):
+                            print(failure)
+                        }
+                    }
                 }
             }
         }

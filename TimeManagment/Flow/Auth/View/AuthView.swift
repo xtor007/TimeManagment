@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AuthView: View {
     var body: some View {
-        SignUpLogin()
+        SignupView(viewModel: SignupViewModel())
             .preferredColorScheme(.light)
     }
 }
