@@ -90,9 +90,15 @@ struct AddEditEventView: View {
                                 )
                         }
                 )
+                .padding(.bottom, 24)
+
+            BottomButton(title: viewModel.buttonTitle) {
+                print("save")
+            }
 
         }
         .padding(.horizontal, 16)
+        .padding(.top, 20)
         .background(
             Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
         )

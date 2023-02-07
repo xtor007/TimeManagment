@@ -25,3 +25,5 @@
 "changeEvent.enterTitle" = "Enter event title";
 "changeEvent.chooseCategories" = "Choose categories";
 "changeEvent.description" = "Description";
+"changeEvent.continue" = "Continue";
+"changeEvent.updateTask" = "Update Task";

@@ -20,6 +20,15 @@ class AddEditEventViewModel: ObservableObject {
         }
     }
 
+    var buttonTitle: String {
+        switch changeType {
+        case .add:
+            return Strings.ChangeEvent.continue
+        case .edit:
+            return Strings.ChangeEvent.updateTask
+        }
+    }
+
     init(changeType: ChangeEventType) {
         self.changeType = changeType
     }

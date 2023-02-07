@@ -11,6 +11,7 @@
 		FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */; };
 		FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C12992B5A9005280BB /* ChangeEventType.swift */; };
 		FFC280C42992D137005280BB /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C32992D136005280BB /* TextView.swift */; };
+		FFC280C72992D428005280BB /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C62992D428005280BB /* BottomButton.swift */; };
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
@@ -46,6 +47,7 @@
 		FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventViewModel.swift; sourceTree = "<group>"; };
 		FFC280C12992B5A9005280BB /* ChangeEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEventType.swift; sourceTree = "<group>"; };
 		FFC280C32992D136005280BB /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		FFC280C62992D428005280BB /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,14 @@
 				FFC280C12992B5A9005280BB /* ChangeEventType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC280C52992D412005280BB /* BottomButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C62992D428005280BB /* BottomButton.swift */,
+			);
+			path = BottomButton;
 			sourceTree = "<group>";
 		};
 		FFC28D29298C3FE7008CED85 /* Calendar */ = {
@@ -301,6 +311,7 @@
 		FFE6A79E298999F600DE5C91 /* Flow */ = {
 			isa = PBXGroup;
 			children = (
+				FFC280C52992D412005280BB /* BottomButton */,
 				FFC280B92992B41B005280BB /* AddEditEvent */,
 				FFC856C629922F6100E304C2 /* EventList */,
 				FFC856BD29919D6E00E304C2 /* EventTypeList */,
@@ -451,6 +462,7 @@
 				FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */,
 				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,
 				FFC856C52991AA2400E304C2 /* EventTypeList.swift in Sources */,
+				FFC280C72992D428005280BB /* BottomButton.swift in Sources */,
 				FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */,
 				FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */,
 				FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */,

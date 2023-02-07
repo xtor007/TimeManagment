@@ -15,12 +15,16 @@ internal enum Strings {
     internal static let add = Strings.tr("Localizable", "changeEvent.add", fallback: "Create Event")
     /// Choose categories
     internal static let chooseCategories = Strings.tr("Localizable", "changeEvent.chooseCategories", fallback: "Choose categories")
+    /// Continue
+    internal static let `continue` = Strings.tr("Localizable", "changeEvent.continue", fallback: "Continue")
     /// Description
     internal static let description = Strings.tr("Localizable", "changeEvent.description", fallback: "Description")
     /// Edit Event
     internal static let edit = Strings.tr("Localizable", "changeEvent.edit", fallback: "Edit Event")
     /// Enter event title
     internal static let enterTitle = Strings.tr("Localizable", "changeEvent.enterTitle", fallback: "Enter event title")
+    /// Update Task
+    internal static let updateTask = Strings.tr("Localizable", "changeEvent.updateTask", fallback: "Update Task")
   }
   internal enum EventType {
     /// Funning
