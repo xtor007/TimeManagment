@@ -32,12 +32,18 @@ internal enum Asset {
     internal static let shopingColor = ColorAsset(name: "shopingColor")
     internal static let sportColor = ColorAsset(name: "sportColor")
     internal static let walkingColor = ColorAsset(name: "walkingColor")
+    internal static let backgroundColor = ColorAsset(name: "backgroundColor")
+    internal static let borderColor = ColorAsset(name: "borderColor")
+    internal static let elementBackgroundColor = ColorAsset(name: "elementBackgroundColor")
     internal static let foregroundColor = ColorAsset(name: "foregroundColor")
     internal static let pickColor = ColorAsset(name: "pickColor")
     internal static let secondaryForegroundColor = ColorAsset(name: "secondaryForegroundColor")
     internal static let simpleColor = ColorAsset(name: "simpleColor")
   }
   internal enum Images {
+    internal static let addEventButtonIcon = ImageAsset(name: "addEventButtonIcon")
+    internal static let connectByCodeButtonIcon = ImageAsset(name: "connectByCodeButtonIcon")
+    internal static let qrButtonIcon = ImageAsset(name: "qrButtonIcon")
     internal static let editButtonIcon = ImageAsset(name: "editButtonIcon")
     internal static let simpleImage = ImageAsset(name: "simpleImage")
   }
