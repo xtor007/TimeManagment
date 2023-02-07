@@ -35,3 +35,31 @@
 "temp.loggedin" = "Logged In! \nYour user id is";
 "temp.errorAuth" = "Error signing out: ";
 
+"general.empty" = "This list is empty";
+
+"eventType.meeting" = "Meeting";
+"eventType.partey" = "Partey";
+"eventType.learning" = "Learning";
+"eventType.shoping" = "Shoping";
+"eventType.walking" = "Walking";
+"eventType.funning" = "Funning";
+"eventType.sport" = "Sport";
+
+
+"scanner.title" = "Scan barcode here";
+
+"main.calendar" = "Personal calendar";
+"main.events" = "Events";
+
+"changeEvent.add" = "Create Event";
+"changeEvent.edit" = "Edit Event";
+"changeEvent.enterTitle" = "Enter event title";
+"changeEvent.chooseCategories" = "Choose categories";
+"changeEvent.description" = "Description";
+"changeEvent.continue" = "Continue";
+"changeEvent.updateTask" = "Update Task";
+"changeEvent.delete" = "Delete task";
+"changeEvent.descriptionPlaceholder" = "Add notes, meeting links or phone numbers...";
+
+"selectTimePeriod.start" = "Start";
+"selectTimePeriod.finish" = "Finish";

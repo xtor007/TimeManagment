@@ -19,6 +19,36 @@
 		C4F5422C2991497B004C9C3C /* GoogleBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5422B2991497B004C9C3C /* GoogleBtn.swift */; };
 		C4F5422F2991A6BB004C9C3C /* GetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F5422E2991A6BA004C9C3C /* GetViewController.swift */; };
 		C4F542342991A990004C9C3C /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F542332991A990004C9C3C /* FirebaseAuth.swift */; };
+		FFC280BC2992B465005280BB /* AddEditEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280BB2992B465005280BB /* AddEditEventView.swift */; };
+		FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */; };
+		FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C12992B5A9005280BB /* ChangeEventType.swift */; };
+		FFC280C42992D137005280BB /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C32992D136005280BB /* TextView.swift */; };
+		FFC280C72992D428005280BB /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C62992D428005280BB /* BottomButton.swift */; };
+		FFC280C92992E7A1005280BB /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C82992E7A1005280BB /* TitleTextField.swift */; };
+		FFC280CB2992E847005280BB /* DescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280CA2992E847005280BB /* DescriptionTextField.swift */; };
+		FFC280CD2992E977005280BB /* SelectTimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280CC2992E977005280BB /* SelectTimePeriod.swift */; };
+		97BC1F9529925C7700CC17F1 /* BarcodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */; };
+		97BC1F9729925D3A00CC17F1 /* PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */; };
+		97BC1F9E2992631800CC17F1 /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97BC1F9D2992631800CC17F1 /* ScannerView.swift */; };
+		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
+		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
+		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
+		FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D35298C44FC008CED85 /* MainViewModel.swift */; };
+		FFC856B02991541200E304C2 /* Montserrat-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */; };
+		FFC856B12991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */; };
+		FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B2299154F400E304C2 /* Fonts.generated.swift */; };
+		FFC856B9299155E300E304C2 /* Date+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B5299155E300E304C2 /* Date+Description.swift */; };
+		FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B6299155E300E304C2 /* Date+AllDates.swift */; };
+		FFC856BB299155E300E304C2 /* Calendar+DaysNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */; };
+		FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */; };
+		FFC856C029919D9D00E304C2 /* EventTypeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856BF29919D9D00E304C2 /* EventTypeData.swift */; };
+		FFC856C32991A5E900E304C2 /* EventTypeElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856C22991A5E900E304C2 /* EventTypeElement.swift */; };
+		FFC856C52991AA2400E304C2 /* EventTypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856C42991AA2400E304C2 /* EventTypeList.swift */; };
+		FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856C72992343300E304C2 /* TimePeriod.swift */; };
+		FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856CA29923ABB00E304C2 /* EventList.swift */; };
+		FFC856CD29923B2500E304C2 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC856CC29923B2500E304C2 /* EventView.swift */; };
+		FFCC389529925ED200735D3D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC389429925ED200735D3D /* MainView.swift */; };
+		FFCC3897299267E900735D3D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCC3896299267E900735D3D /* TabBarView.swift */; };
 		FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */; };
 		FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7922989989700DE5C91 /* Assets.xcassets */; };
 		FFE6A7962989989700DE5C91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFE6A7952989989700DE5C91 /* Preview Assets.xcassets */; };
@@ -39,6 +69,36 @@
 		C4F5422D29916BB8004C9C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C4F5422E2991A6BA004C9C3C /* GetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetViewController.swift; sourceTree = "<group>"; };
 		C4F542332991A990004C9C3C /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuth.swift; sourceTree = "<group>"; };
+		FFC280BB2992B465005280BB /* AddEditEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventView.swift; sourceTree = "<group>"; };
+		FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditEventViewModel.swift; sourceTree = "<group>"; };
+		FFC280C12992B5A9005280BB /* ChangeEventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEventType.swift; sourceTree = "<group>"; };
+		FFC280C32992D136005280BB /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		FFC280C62992D428005280BB /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
+		FFC280C82992E7A1005280BB /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
+		FFC280CA2992E847005280BB /* DescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextField.swift; sourceTree = "<group>"; };
+		FFC280CC2992E977005280BB /* SelectTimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimePeriod.swift; sourceTree = "<group>"; };
+		97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScanner.swift; sourceTree = "<group>"; };
+		97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionsManager.swift; sourceTree = "<group>"; };
+		97BC1F9D2992631800CC17F1 /* ScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
+		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		FFC28D35298C44FC008CED85 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		FFC856B2299154F400E304C2 /* Fonts.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
+		FFC856B5299155E300E304C2 /* Date+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Description.swift"; sourceTree = "<group>"; };
+		FFC856B6299155E300E304C2 /* Date+AllDates.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+AllDates.swift"; sourceTree = "<group>"; };
+		FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+DaysNames.swift"; sourceTree = "<group>"; };
+		FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+IsSameDay.swift"; sourceTree = "<group>"; };
+		FFC856BF29919D9D00E304C2 /* EventTypeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeData.swift; sourceTree = "<group>"; };
+		FFC856C22991A5E900E304C2 /* EventTypeElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeElement.swift; sourceTree = "<group>"; };
+		FFC856C42991AA2400E304C2 /* EventTypeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypeList.swift; sourceTree = "<group>"; };
+		FFC856C72992343300E304C2 /* TimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePeriod.swift; sourceTree = "<group>"; };
+		FFC856CA29923ABB00E304C2 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		FFC856CC29923B2500E304C2 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		FFCC389429925ED200735D3D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FFCC3896299267E900735D3D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		FFE6A78B2989989200DE5C91 /* TimeManagment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeManagment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFE6A78E2989989200DE5C91 /* TimeManagmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeManagmentApp.swift; sourceTree = "<group>"; };
 		FFE6A7922989989700DE5C91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,6 +149,72 @@
 				C47086DC298C9B3600640E6B /* SignupView.swift */,
 				C47086E0298C9B5D00640E6B /* AuthView.swift */,
 				C4F5422B2991497B004C9C3C /* GoogleBtn.swift */,
+		FFC280B92992B41B005280BB /* AddEditEvent */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C02992B58D005280BB /* Model */,
+				FFC280BD2992B46B005280BB /* ViewModel */,
+				FFC280BA2992B451005280BB /* View */,
+			);
+			path = AddEditEvent;
+			sourceTree = "<group>";
+		};
+		FFC280BA2992B451005280BB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280BB2992B465005280BB /* AddEditEventView.swift */,
+				FFC280C32992D136005280BB /* TextView.swift */,
+				FFC280C82992E7A1005280BB /* TitleTextField.swift */,
+				FFC280CA2992E847005280BB /* DescriptionTextField.swift */,
+				FFC280CC2992E977005280BB /* SelectTimePeriod.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC280BD2992B46B005280BB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280BE2992B485005280BB /* AddEditEventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFC280C02992B58D005280BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C12992B5A9005280BB /* ChangeEventType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC280C52992D412005280BB /* BottomButton */ = {
+			isa = PBXGroup;
+			children = (
+				FFC280C62992D428005280BB /* BottomButton.swift */,
+			);
+			path = BottomButton;
+		97BC1F9329925C5B00CC17F1 /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				97BC1F9429925C7700CC17F1 /* BarcodeScanner.swift */,
+				97BC1F9629925D3A00CC17F1 /* PermissionsManager.swift */,
+				97BC1F9D2992631800CC17F1 /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+		FFC28D29298C3FE7008CED85 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2A298C4052008CED85 /* View */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		FFC28D2A298C4052008CED85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D31298C448C008CED85 /* CalendarView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +223,29 @@
 			isa = PBXGroup;
 			children = (
 				C4F542332991A990004C9C3C /* FirebaseAuth.swift */,
+		FFC28D2C298C42B4008CED85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D2D298C42CA008CED85 /* EventType.swift */,
+				FFC28D2F298C4318008CED85 /* Event.swift */,
+				FFC856C72992343300E304C2 /* TimePeriod.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC28D33298C4496008CED85 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC389329925EC200735D3D /* View */,
+				FFC28D34298C44EA008CED85 /* ViewModel */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		FFC28D34298C44EA008CED85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFC28D35298C44FC008CED85 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,8 +253,76 @@
 		C4F542322991A8BA004C9C3C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+		FFC856AD299153F100E304C2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856AF2991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf */,
+				FFC856AE2991541200E304C2 /* Montserrat-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		FFC856B4299155BA00E304C2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856B7299155E300E304C2 /* Calendar+DaysNames.swift */,
+				FFC856B6299155E300E304C2 /* Date+AllDates.swift */,
+				FFC856B5299155E300E304C2 /* Date+Description.swift */,
+				FFC856B8299155E300E304C2 /* Date+IsSameDay.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FFC856BD29919D6E00E304C2 /* EventTypeList */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856C12991A5CE00E304C2 /* View */,
+				FFC856BE29919D8100E304C2 /* Model */,
+			);
+			path = EventTypeList;
+			sourceTree = "<group>";
+		};
+		FFC856BE29919D8100E304C2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856BF29919D9D00E304C2 /* EventTypeData.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FFC856C12991A5CE00E304C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856C22991A5E900E304C2 /* EventTypeElement.swift */,
+				FFC856C42991AA2400E304C2 /* EventTypeList.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFC856C629922F6100E304C2 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856C929923AA800E304C2 /* View */,
+			);
+			path = EventList;
+			sourceTree = "<group>";
+		};
+		FFC856C929923AA800E304C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFC856CA29923ABB00E304C2 /* EventList.swift */,
+				FFC856CC29923B2500E304C2 /* EventView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFCC389329925EC200735D3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFCC389429925ED200735D3D /* MainView.swift */,
+				FFCC3896299267E900735D3D /* TabBarView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FFE6A7822989989200DE5C91 = {
@@ -130,6 +347,8 @@
 				C4F5422D29916BB8004C9C3C /* Info.plist */,
 				C47086D4298C927F00640E6B /* GoogleService-Info.plist */,
 				C47086E2298C9B6900640E6B /* Extensions */,
+				FFC856B4299155BA00E304C2 /* Extension */,
+				FFC28D2C298C42B4008CED85 /* Model */,
 				FFE6A79E298999F600DE5C91 /* Flow */,
 				C4F542322991A8BA004C9C3C /* Model */,
 				FFE6A79D298999D600DE5C91 /* Resources */,
@@ -160,6 +379,8 @@
 		FFE6A79D298999D600DE5C91 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FFC856B2299154F400E304C2 /* Fonts.generated.swift */,
+				FFC856AD299153F100E304C2 /* Fonts */,
 				FFE6A7AA29899D3000DE5C91 /* Assets.generated.swift */,
 				FFE6A7AB29899D3000DE5C91 /* Strings.generated.swift */,
 				FFE6A79F29899A5200DE5C91 /* Images.xcassets */,
@@ -173,6 +394,14 @@
 			isa = PBXGroup;
 			children = (
 				C47086DB298C9B1500640E6B /* Auth */,
+				FFC280C52992D412005280BB /* BottomButton */,
+				FFC280B92992B41B005280BB /* AddEditEvent */,
+				97BC1F9329925C5B00CC17F1 /* Scanner */,
+				FFC856C629922F6100E304C2 /* EventList */,
+				FFC856BD29919D6E00E304C2 /* EventTypeList */,
+				FFC28D33298C4496008CED85 /* Main */,
+				FFC28D29298C3FE7008CED85 /* Calendar */,
+				FFE6A7902989989200DE5C91 /* ContentView.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -251,7 +480,9 @@
 				FFE6A7A029899A5200DE5C91 /* Images.xcassets in Resources */,
 				C47086D5298C927F00640E6B /* GoogleService-Info.plist in Resources */,
 				FFE6A7A229899A5E00DE5C91 /* Colors.xcassets in Resources */,
+				FFC856B12991541200E304C2 /* Montserrat-Italic-VariableFont_wght.ttf in Resources */,
 				FFE6A7962989989700DE5C91 /* Preview Assets.xcassets in Resources */,
+				FFC856B02991541200E304C2 /* Montserrat-VariableFont_wght.ttf in Resources */,
 				FFE6A7932989989700DE5C91 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +536,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				C47086E1298C9B5D00640E6B /* AuthView.swift in Sources */,
+				FFC280C92992E7A1005280BB /* TitleTextField.swift in Sources */,
+				FFE6A7912989989200DE5C91 /* ContentView.swift in Sources */,
+				FFC856BB299155E300E304C2 /* Calendar+DaysNames.swift in Sources */,
+				FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */,
+				FFC856B9299155E300E304C2 /* Date+Description.swift in Sources */,
+				FFC856CD29923B2500E304C2 /* EventView.swift in Sources */,
+				FFC280BC2992B465005280BB /* AddEditEventView.swift in Sources */,
+				FFC856C029919D9D00E304C2 /* EventTypeData.swift in Sources */,
+				FFC856BA299155E300E304C2 /* Date+AllDates.swift in Sources */,
+				FFC856CB29923ABB00E304C2 /* EventList.swift in Sources */,
+				FFC280CB2992E847005280BB /* DescriptionTextField.swift in Sources */,
+				97BC1F9729925D3A00CC17F1 /* PermissionsManager.swift in Sources */,
+				97BC1F9E2992631800CC17F1 /* ScannerView.swift in Sources */,
+				FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */,
+				97BC1F9529925C7700CC17F1 /* BarcodeScanner.swift in Sources */,
+				FFC856C32991A5E900E304C2 /* EventTypeElement.swift in Sources */,
 				FFE6A7AD29899D3000DE5C91 /* Strings.generated.swift in Sources */,
 				C4F542342991A990004C9C3C /* FirebaseAuth.swift in Sources */,
 				FFE6A78F2989989200DE5C91 /* TimeManagmentApp.swift in Sources */,
@@ -314,6 +561,20 @@
 				C4F5422A29911CCB004C9C3C /* AppDelegate.swift in Sources */,
 				C47086E4298C9B7E00640E6B /* String+EmailPassValidation.swift in Sources */,
 				C47086DD298C9B3600640E6B /* SignupView.swift in Sources */,
+				FFC28D30298C4318008CED85 /* Event.swift in Sources */,
+				FFC280C42992D137005280BB /* TextView.swift in Sources */,
+				FFCC389529925ED200735D3D /* MainView.swift in Sources */,
+				FFC856BC299155E300E304C2 /* Date+IsSameDay.swift in Sources */,
+				FFE6A7AC29899D3000DE5C91 /* Assets.generated.swift in Sources */,
+				FFCC3897299267E900735D3D /* TabBarView.swift in Sources */,
+				FFC280C22992B5A9005280BB /* ChangeEventType.swift in Sources */,
+				FFC28D36298C44FC008CED85 /* MainViewModel.swift in Sources */,
+				FFC856C52991AA2400E304C2 /* EventTypeList.swift in Sources */,
+				FFC280C72992D428005280BB /* BottomButton.swift in Sources */,
+				FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */,
+				FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */,
+				FFC280CD2992E977005280BB /* SelectTimePeriod.swift in Sources */,
+				FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,10 +714,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagment/Preview Content\"";
-				DEVELOPMENT_TEAM = 3MZDX9DG27;
+				DEVELOPMENT_TEAM = H3SHR752RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeManagment/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -467,7 +729,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.TimeManagment";
+				PRODUCT_BUNDLE_IDENTIFIER = sssasdads.sadasd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -483,10 +745,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TimeManagment/Preview Content\"";
-				DEVELOPMENT_TEAM = 3MZDX9DG27;
+				DEVELOPMENT_TEAM = H3SHR752RN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TimeManagment/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan QR codes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -497,7 +760,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "-.TimeManagment";
+				PRODUCT_BUNDLE_IDENTIFIER = sssasdads.sadasd;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

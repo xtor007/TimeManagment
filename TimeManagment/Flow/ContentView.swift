@@ -9,25 +9,14 @@ import SwiftUI
 import FirebaseAuth
 
 struct ContentView: View {
-    @AppStorage(Strings.Db.uid) var userID: String = ""
+    @State var type = EventTypeData.meeting
     var body: some View {
-        if userID == "" {
-            AuthView()
-        } else {
-            Text("\(Strings.Temp.loggedin) \(userID)")
-            Button(action: {
-                let firebaseAuth = Auth.auth()
-                do {
-                    try firebaseAuth.signOut()
-                    withAnimation {
-                        userID = ""
-                    }
-                } catch let signOutError as NSError {
-                    print(Strings.Temp.errorAuth, signOutError)
-                }
-            }) {
-                Text(Strings.Signout.signout)
-            }
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+            EventTypeList(selectedType: $type)
         }
     }
 }
