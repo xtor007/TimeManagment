@@ -27,6 +27,8 @@ internal enum Strings {
     internal static let walking = Strings.tr("Localizable", "eventType.walking", fallback: "Walking")
   }
   internal enum General {
+    /// This list is empty
+    internal static let empty = Strings.tr("Localizable", "general.empty", fallback: "This list is empty")
     /// Localizable.strings
     ///   TimeManagment
     /// 
