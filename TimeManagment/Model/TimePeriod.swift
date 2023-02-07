@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct TimePeriod {
+struct TimePeriod: Hashable {
 
     let start: Time
     let finish: Time
@@ -18,7 +18,7 @@ struct TimePeriod {
 
 }
 
-struct Time {
+struct Time: Hashable {
 
     let hours: Int
     let minutes: Int

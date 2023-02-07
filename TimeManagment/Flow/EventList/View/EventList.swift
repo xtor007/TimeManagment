@@ -12,7 +12,16 @@ struct EventList: View {
     @EnvironmentObject var viewModel: MainViewModel
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(showsIndicators: false) {
+            VStack {
+                ForEach(0..<viewModel.events.count, id: \.self) { eventIndex in
+                    let event = viewModel.events[eventIndex]
+                    if event.date.isSameDay(date: viewModel.date) && event.type == viewModel.type.data {
+                        EventView(event: event)
+                    }
+                }
+            }
+        }
     }
 
 }

@@ -19,6 +19,28 @@ struct Event {
 extension Event {
     static let preview = [
         Event(
+            title: "Meet my friends",
+            date: .now,
+            time: TimePeriod(
+                start: Time(hours: 10, minutes: 15),
+                finish: Time(hours: 11, minutes: 45)
+            ),
+            description: "Go to caffee",
+            type: EventTypeData.meeting.data,
+            authorId: "3"
+        ),
+        Event(
+            title: "Meet Mike",
+            date: .now,
+            time: TimePeriod(
+                start: Time(hours: 13, minutes: 0),
+                finish: Time(hours: 13, minutes: 30)
+            ),
+            description: "Go to shop",
+            type: EventTypeData.meeting.data,
+            authorId: "1"
+        ),
+        Event(
             title: "Meet my boyfriend",
             date: .now,
             time: TimePeriod(
