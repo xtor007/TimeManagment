@@ -15,6 +15,8 @@ internal enum Strings {
     internal static let add = Strings.tr("Localizable", "changeEvent.add", fallback: "Create Event")
     /// Edit Event
     internal static let edit = Strings.tr("Localizable", "changeEvent.edit", fallback: "Edit Event")
+    /// Enter event title
+    internal static let enterTitle = Strings.tr("Localizable", "changeEvent.enterTitle", fallback: "Enter event title")
   }
   internal enum EventType {
     /// Funning

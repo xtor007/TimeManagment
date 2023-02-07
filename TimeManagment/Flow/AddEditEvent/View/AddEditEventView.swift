@@ -13,6 +13,8 @@ struct AddEditEventView: View {
 
     @StateObject var viewModel: AddEditEventViewModel
 
+    @State var eventTitle = ""
+
     var body: some View {
         VStack {
             HStack {
@@ -30,8 +32,14 @@ struct AddEditEventView: View {
                 }
 
             }
+            TextField(Strings.ChangeEvent.enterTitle, text: $eventTitle)
+            Divider()
         }
         .padding(.horizontal, 16)
+        .onTapGesture {
+            // Close keyboard
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
     }
 
 }

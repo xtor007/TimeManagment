@@ -21,6 +21,7 @@ class MainViewModel: ObservableObject {
             }
         }
     }
+    @Published var editingEventIndex = 0
 
     let userId = "1"
 

@@ -44,6 +44,7 @@ struct MainView: View {
                     }
                     EventTypeList(selectedType: $viewModel.type)
                     EventList { editingEventIndex in
+                        viewModel.editingEventIndex = editingEventIndex
                         willEditEvent = true
                     }
                         .frame(height: UIScreen.main.bounds.height * 0.4)

@@ -42,7 +42,7 @@ struct EventList: View {
 
 struct EventList_Previews: PreviewProvider {
     static var previews: some View {
-        EventList() { _ in
+        EventList { _ in
             return
         }
             .environmentObject(MainViewModel())
