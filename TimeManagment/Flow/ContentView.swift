@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
     @State var type = EventTypeData.meeting
@@ -17,7 +18,6 @@ struct ContentView: View {
             Text("Hello, world!")
             EventTypeList(selectedType: $type)
         }
-        .padding()
     }
 }
 

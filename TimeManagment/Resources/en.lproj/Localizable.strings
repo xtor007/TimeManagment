@@ -7,6 +7,34 @@
 */
 
 "general.simpleLine" = "simle line";
+
+// Auth localizable strings
+"login.welcomeBack" = "Welcome to Task Manager! ";
+"login.createAccount" = "Don't have an account?";
+"login.signin" = "Sign In";
+"signup.createAccount" = "Create an account!";
+"signup.alreadyHave" = "Already have an account?";
+"signup.createNew" = "Create new account";
+"signout.signout" = "Sign Out";
+"authcheck.signIn" = "signIn";
+
+// Placeholders
+"placeholder.email" = "Email";
+"placeholder.password" = "Password";
+
+// Icons
+"icon.email" = "mail";
+"icon.lock" = "lock";
+"icon.checkmark" = "checkmark";
+"icon.xmark" = "xmark";
+
+// Firebase Rows
+"db.uid" = "uid";
+
+// Temp
+"temp.loggedin" = "Logged In! \nYour user id is";
+"temp.errorAuth" = "Error signing out: ";
+
 "general.empty" = "This list is empty";
 
 "eventType.meeting" = "Meeting";

@@ -6,14 +6,33 @@
 //
 
 import SwiftUI
+import FirebaseCore
+import FirebaseAuth
 
 @main
 struct TimeManagmentApp: App {
-    @StateObject var mainViewModel = MainViewModel()
+    @AppStorage("signIn") var isSignIn = false
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            MainView()
-                .environmentObject(mainViewModel)
+            if !isSignIn {
+                AuthView()
+            } else {
+                Text("\(Strings.Temp.loggedin)")
+                Button(action: {
+                    let firebaseAuth = Auth.auth()
+                   do {
+                     try firebaseAuth.signOut()
+                   } catch let signOutError as NSError {
+                     print("Error signing out: %@", signOutError)
+                   }
+                    UserDefaults.standard.set(false, forKey: "signIn")
+                }) {
+                    Text(Strings.Signout.signout)
+                }
+            }
         }
     }
+
 }
