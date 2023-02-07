@@ -13,14 +13,10 @@ class MainViewModel: ObservableObject {
     @Published var type = EventTypeData.meeting
     @Published var date = Date.now {
         didSet {
-            for event in events {
-                if event.date.isSameDay(date: date) {
-                    for eventType in EventTypeData.allCases {
-                        if event.type == eventType.data {
-                            type = eventType
-                            return
-                        }
-                    }
+            for event in events where event.date.isSameDay(date: date) {
+                for eventType in EventTypeData.allCases where event.type == eventType.data {
+                    type = eventType
+                    return
                 }
             }
         }
