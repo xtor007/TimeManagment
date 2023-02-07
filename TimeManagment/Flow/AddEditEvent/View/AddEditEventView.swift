@@ -20,6 +20,7 @@ struct AddEditEventView: View {
         start: Time(hours: 7, minutes: 0),
         finish: Time(hours: 8, minutes: 0)
     )
+    @State var description = ""
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -77,9 +78,24 @@ struct AddEditEventView: View {
             Text(Strings.ChangeEvent.description)
                 .font(.custom(FontFamily.Montserrat.medium, size: 14))
                 .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+            TextView(text: $description, textStyle: .callout)
+                .background(
+                    RoundedRectangle(cornerRadius: 20)
+                        .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
+                        .overlay {
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(
+                                    Asset.Colors.borderColor.swiftUIColor,
+                                    lineWidth: 1
+                                )
+                        }
+                )
 
         }
         .padding(.horizontal, 16)
+        .background(
+            Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
+        )
         .onTapGesture {
             // Close keyboard
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
