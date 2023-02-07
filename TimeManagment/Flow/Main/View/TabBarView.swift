@@ -9,50 +9,67 @@ import SwiftUI
 
 struct TabBarView: View {
 
-    let connectByCodeAction: () -> Void
-    let connectByQRAction: () -> Void
-    let addEvent: () -> Void
+    var connectByCodeAction: () -> Void = {}
+    var connectByQRAction: () -> Void = {}
+    var addEvent: () -> Void = {}
 
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
-                .offset(y: 20)
-            HStack {
-                Spacer()
-                Button {
-                    connectByCodeAction()
-                } label: {
-                    Asset.Images.connectByCodeButtonIcon.swiftUIImage
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                }
-                Spacer()
-                Button {
-                    addEvent()
-                } label: {
-                    Asset.Images.addEventButtonIcon.swiftUIImage
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 56)
-                        .offset(y: -20)
-                }
-                Spacer()
-                Button {
-                    connectByQRAction()
-                } label: {
-                    Asset.Images.qrButtonIcon.swiftUIImage
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30)
-                }
-                Spacer()
-            }
-        }
-        .frame(height: 100)
-    }
+        HStack {
+            Spacer()
 
+            Button {
+                connectByCodeAction()
+            } label: {
+                Asset.Images.connectByCodeButtonIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30)
+            }
+
+            Spacer()
+
+            Button {
+                addEvent()
+            } label: {
+                Asset.Images.addEventButtonIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 56)
+                    .offset(y: -20)
+            }
+
+            Spacer()
+
+            Button {
+                connectByQRAction()
+            } label: {
+                Asset.Images.qrButtonIcon.swiftUIImage
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 30)
+            }
+
+            Spacer()
+        }
+        .background {
+            Color.white
+                .clipShape(TopRoundCornersShape(cornerRadius: 25))
+        }
+    }
+}
+
+private struct TopRoundCornersShape: Shape {
+
+    var cornerRadius: CGFloat
+
+    func path(in rect: CGRect) -> Path {
+        let path = UIBezierPath(
+            roundedRect: rect,
+            byRoundingCorners: [.topLeft, .topRight],
+            cornerRadii: CGSize(width: cornerRadius,
+                                height: cornerRadius))
+        return Path(path.cgPath)
+    }
 }
 
 struct TabBarView_Previews: PreviewProvider {

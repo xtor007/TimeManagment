@@ -12,7 +12,7 @@ struct MainView: View {
     @EnvironmentObject var viewModel: MainViewModel
 
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             ScrollView(showsIndicators: false) {
                 VStack {
                     HStack {
@@ -21,6 +21,8 @@ struct MainView: View {
                             .font(.custom(FontFamily.Montserrat.medium, size: 20))
                         Spacer()
                     }
+                    .padding(.horizontal, 12)
+
                     CalendarView()
                         .background(
                             RoundedRectangle(cornerRadius: 20)
@@ -33,19 +35,24 @@ struct MainView: View {
                                         )
                                 }
                         )
+                        .padding(.horizontal, 12)
+
                     HStack {
                         Text(Strings.Main.events)
                             .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
                             .font(.custom(FontFamily.Montserrat.medium, size: 20))
                         Spacer()
                     }
-                    EventTypeList(selectedType: $viewModel.type)
+                    .padding(.horizontal, 12)
+
+                    EventTypeList(contentInset: 12, selectedType: $viewModel.type)
+
                     EventList()
-                        .frame(height: UIScreen.main.bounds.height * 0.4)
+                        .padding(.horizontal, 12)
                 }
             }
-            .padding(.horizontal, 12)
             .padding(.top, 32)
+
             TabBarView {
                 print("code")
             } connectByQRAction: {
@@ -57,7 +64,7 @@ struct MainView: View {
         .background(
             Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
         )
-        .ignoresSafeArea(edges: .bottom)
+        .ignoresSafeArea(edges: .top)
     }
 
 }
