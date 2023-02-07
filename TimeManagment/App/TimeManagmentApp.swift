@@ -14,8 +14,8 @@ struct TimeManagmentApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-            .environmentObject(permissionManager)
+            ScannerView(code: .constant(""))
+                .environmentObject(permissionManager)
         }
     }
 }

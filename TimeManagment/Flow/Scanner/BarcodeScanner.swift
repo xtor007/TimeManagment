@@ -14,7 +14,7 @@ struct BarcodeScanner: UIViewControllerRepresentable {
 
     func makeUIViewController(context: Context) -> DataScannerViewController {
         DataScannerViewController(
-            recognizedDataTypes: [.barcode()],
+            recognizedDataTypes: [.barcode(symbologies: [.qr])],
             qualityLevel: .balanced,
             recognizesMultipleItems: false,
             isGuidanceEnabled: true,
@@ -53,5 +53,5 @@ struct BarcodeScanner: UIViewControllerRepresentable {
             }
         }
 
-    }    
+    }
 }

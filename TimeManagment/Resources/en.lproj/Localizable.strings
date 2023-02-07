@@ -15,3 +15,5 @@
 "eventType.walking" = "Walking";
 "eventType.funning" = "Funning";
 "eventType.sport" = "Sport";
+
+"scanner.title" = "Scan barcode here";
