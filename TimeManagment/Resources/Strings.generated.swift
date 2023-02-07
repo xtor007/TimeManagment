@@ -27,11 +27,19 @@ internal enum Strings {
     internal static let walking = Strings.tr("Localizable", "eventType.walking", fallback: "Walking")
   }
   internal enum General {
+    /// This list is empty
+    internal static let empty = Strings.tr("Localizable", "general.empty", fallback: "This list is empty")
     /// Localizable.strings
     ///   TimeManagment
     /// 
     ///   Created by Anatoliy Khramchenko on 31.01.2023.
     internal static let simpleLine = Strings.tr("Localizable", "general.simpleLine", fallback: "simle line")
+  }
+  internal enum Main {
+    /// Personal calendar
+    internal static let calendar = Strings.tr("Localizable", "main.calendar", fallback: "Personal calendar")
+    /// Events
+    internal static let events = Strings.tr("Localizable", "main.events", fallback: "Events")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

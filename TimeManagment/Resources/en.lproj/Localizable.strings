@@ -7,6 +7,7 @@
 */
 
 "general.simpleLine" = "simle line";
+"general.empty" = "This list is empty";
 
 "eventType.meeting" = "Meeting";
 "eventType.partey" = "Partey";
@@ -15,3 +16,6 @@
 "eventType.walking" = "Walking";
 "eventType.funning" = "Funning";
 "eventType.sport" = "Sport";
+
+"main.calendar" = "Personal calendar";
+"main.events" = "Events";
