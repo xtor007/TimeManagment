@@ -10,8 +10,9 @@ import SwiftUI
 struct AddEditEventView: View {
 
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @EnvironmentObject var mainViewModel: MainViewModel
 
-    @StateObject var viewModel: AddEditEventViewModel
+    @ObservedObject var viewModel: AddEditEventViewModel
 
     @State var eventTitle = ""
     @State var eventType = EventTypeData.meeting
@@ -93,7 +94,24 @@ struct AddEditEventView: View {
                 .padding(.bottom, 24)
 
             BottomButton(title: viewModel.buttonTitle) {
-                print("save")
+                guard !eventTitle.isEmpty else {
+                    return
+                }
+                let newEvent = Event(
+                    title: eventTitle,
+                    date: date,
+                    time: time,
+                    description: description,
+                    type: eventType.data,
+                    authorId: mainViewModel.userId
+                )
+                switch viewModel.changeType {
+                case .add:
+                    mainViewModel.events.append(newEvent)
+                case .edit:
+                    mainViewModel.events[mainViewModel.editingEventIndex] = newEvent
+                }
+                presentationMode.wrappedValue.dismiss()
             }
 
         }
@@ -105,6 +123,19 @@ struct AddEditEventView: View {
         .onTapGesture {
             // Close keyboard
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
+        .onAppear {
+            if viewModel.changeType == .edit {
+                let event = mainViewModel.events[mainViewModel.editingEventIndex]
+                eventTitle = event.title
+                date = event.date
+                time = event.time
+                description = event.description
+                for type in EventTypeData.allCases where type.data == event.type {
+                    eventType = type
+                    return
+                }
+            }
         }
     }
 
