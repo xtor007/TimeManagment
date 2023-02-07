@@ -13,33 +13,36 @@ struct MainView: View {
 
     var body: some View {
         VStack {
-            VStack {
-                HStack {
-                    Text(Strings.Main.calendar)
-                        .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-                        .font(.custom(FontFamily.Montserrat.medium, size: 20))
-                    Spacer()
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    HStack {
+                        Text(Strings.Main.calendar)
+                            .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                            .font(.custom(FontFamily.Montserrat.medium, size: 20))
+                        Spacer()
+                    }
+                    CalendarView()
+                        .background(
+                            RoundedRectangle(cornerRadius: 20)
+                                .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
+                                .overlay {
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(
+                                            Asset.Colors.borderColor.swiftUIColor,
+                                            lineWidth: 1
+                                        )
+                                }
+                        )
+                    HStack {
+                        Text(Strings.Main.events)
+                            .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                            .font(.custom(FontFamily.Montserrat.medium, size: 20))
+                        Spacer()
+                    }
+                    EventTypeList(selectedType: $viewModel.type)
+                    EventList()
+                        .frame(height: UIScreen.main.bounds.height * 0.4)
                 }
-                CalendarView()
-                    .background(
-                        RoundedRectangle(cornerRadius: 20)
-                            .fill(Asset.Colors.elementBackgroundColor.swiftUIColor)
-                            .overlay {
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(
-                                        Asset.Colors.borderColor.swiftUIColor,
-                                        lineWidth: 1
-                                    )
-                            }
-                    )
-                HStack {
-                    Text(Strings.Main.events)
-                        .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
-                        .font(.custom(FontFamily.Montserrat.medium, size: 20))
-                    Spacer()
-                }
-                EventTypeList(selectedType: $viewModel.type)
-                EventList()
             }
             .padding(.horizontal, 12)
             .padding(.top, 32)
