@@ -61,6 +61,12 @@ internal enum Strings {
     /// Events
     internal static let events = Strings.tr("Localizable", "main.events", fallback: "Events")
   }
+  internal enum SelectTimePeriod {
+    /// Finish
+    internal static let finish = Strings.tr("Localizable", "selectTimePeriod.finish", fallback: "Finish")
+    /// Start
+    internal static let start = Strings.tr("Localizable", "selectTimePeriod.start", fallback: "Start")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

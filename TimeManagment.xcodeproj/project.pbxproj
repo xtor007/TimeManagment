@@ -14,6 +14,7 @@
 		FFC280C72992D428005280BB /* BottomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C62992D428005280BB /* BottomButton.swift */; };
 		FFC280C92992E7A1005280BB /* TitleTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280C82992E7A1005280BB /* TitleTextField.swift */; };
 		FFC280CB2992E847005280BB /* DescriptionTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280CA2992E847005280BB /* DescriptionTextField.swift */; };
+		FFC280CD2992E977005280BB /* SelectTimePeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC280CC2992E977005280BB /* SelectTimePeriod.swift */; };
 		FFC28D2E298C42CA008CED85 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2D298C42CA008CED85 /* EventType.swift */; };
 		FFC28D30298C4318008CED85 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D2F298C4318008CED85 /* Event.swift */; };
 		FFC28D32298C448C008CED85 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC28D31298C448C008CED85 /* CalendarView.swift */; };
@@ -52,6 +53,7 @@
 		FFC280C62992D428005280BB /* BottomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomButton.swift; sourceTree = "<group>"; };
 		FFC280C82992E7A1005280BB /* TitleTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextField.swift; sourceTree = "<group>"; };
 		FFC280CA2992E847005280BB /* DescriptionTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextField.swift; sourceTree = "<group>"; };
+		FFC280CC2992E977005280BB /* SelectTimePeriod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimePeriod.swift; sourceTree = "<group>"; };
 		FFC28D2D298C42CA008CED85 /* EventType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		FFC28D2F298C4318008CED85 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		FFC28D31298C448C008CED85 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				FFC280C32992D136005280BB /* TextView.swift */,
 				FFC280C82992E7A1005280BB /* TitleTextField.swift */,
 				FFC280CA2992E847005280BB /* DescriptionTextField.swift */,
+				FFC280CC2992E977005280BB /* SelectTimePeriod.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				FFC280C72992D428005280BB /* BottomButton.swift in Sources */,
 				FFC856B3299154F400E304C2 /* Fonts.generated.swift in Sources */,
 				FFC280BF2992B485005280BB /* AddEditEventViewModel.swift in Sources */,
+				FFC280CD2992E977005280BB /* SelectTimePeriod.swift in Sources */,
 				FFC856C82992343300E304C2 /* TimePeriod.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

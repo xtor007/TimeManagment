@@ -22,6 +22,8 @@ struct AddEditEventView: View {
         finish: Time(hours: 8, minutes: 0)
     )
     @State var description = ""
+    
+    @State var willShowingTimePicker = false
 
     var body: some View {
         VStack(alignment: .leading) {
@@ -70,6 +72,9 @@ struct AddEditEventView: View {
                 Spacer()
                 Text(time.description)
                     .foregroundColor(Asset.Colors.foregroundColor.swiftUIColor)
+                    .onTapGesture {
+                        willShowingTimePicker = true
+                    }
             }
             .padding(.bottom, 24)
 
@@ -121,6 +126,9 @@ struct AddEditEventView: View {
         .background(
             Asset.Colors.backgroundColor.swiftUIColor.ignoresSafeArea()
         )
+        .sheet(isPresented: $willShowingTimePicker) {
+            SelectTimePeriod(timePeriod: $time)
+        }
         .onTapGesture {
             // Close keyboard
             UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
